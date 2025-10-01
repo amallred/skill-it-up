@@ -1,0 +1,115 @@
+/* || RESET */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+picture,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+/* || VARIABLES */
+
+:root {
+    /* FONTS */
+    --header-font: 'Candal';
+    --font: 'Rubik'; 
+
+    /* COLORS */
+    --black: rgb(20, 10, 31);
+    --background: rgba(226, 233, 195, 0.25);
+    --light: rgb(226, 233, 195); 
+    --green: rgb(92, 123, 20);
+    --orange: rgb(238, 136, 47);
+    --red: rgb(193, 51, 61);
+    --white: rgb(255, 255, 255);
+
+    /* BORDERS */
+    --BORDERS: 1.5px solid var(--BORDER-COLOR);
+
+    /* SHADOWS */
+    --BOX-SHADOW: .5rem .5rem var(--SHADOW-COLOR);
+
+    /* STANDARD PADDING */
+    --PADDING-TEXT: .75rem;
+    --PADDING-BOX: 1.5rem;
+
+    /* STANDARD MARGIN */
+    --MARGIN: .5rem;
+    /* CHANGE TO CLAMP LATER! */
+
+    /*  ==================
+        ==================
+        confirm the above styling before submitting
+        REMOVE THIS COMMENT
+        ==================
+        ================== */
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Candal";
+    src: url("./fonts/Candal/Candal-Regular.ttf"); 
+}
+@font-face {
+    font-display: swap;
+    font-family: "Rubik";
+    src: url("./fonts/Rubik/Rubik-VariableFont_wght.ttf"); 
+}
+
+/* || STYLE */
+
+body {
+    background-color: var(--background);
+    font-family: var(--font);
+    color: var(--);
+}
+
+.header {
+    font-family: var(--header-font);
+}
+
+.main-header{
+    background-color: var(--green);
+    display: flex;justify-content: flex-end;
+    padding: var(--PADDING-BOX);
+}
+
+.main-container {
+    display: grid;
+}
+
+.tile {
+    border: 1px solid var(--black);
+    margin: var(--MARGIN);
+    border-radius: .75rem;;
+    padding: var(--PADDING-TEXT);
+}
+
