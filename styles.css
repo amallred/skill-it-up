@@ -143,10 +143,9 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: var(--PADDING-BOX);
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1rem; */
     grid-area: header;
-    padding: 1rem 3rem;
+    padding: 0 3rem;
 }
 
 .logo { 
@@ -156,24 +155,32 @@ body {
 
 /* || MOBILE HAMBURGER MENU || */
 
-/* #hamburger {
-    height: 2rem;
-    display: block;
-    position: absolute;
-}
-
-#navigation-list {
-    display: none;
-}
-
-#navigation-list a {
-    display: block;
-}
-
 .navigation {
-    overflow: hidden;
-    position: relative;
-} */
+    display: none;
+    background-color: red;
+    padding: .5rem;
+}
+
+.hamburger {
+    height: auto;
+    width: auto;
+    display: inline-block;
+    position: absolute;
+    right: 2rem;
+    top: auto;
+}
+
+.hamburger img {
+    width: 2rem;
+    height: auto;
+    display: block;
+}
+
+.top-header a {
+    /* display: block; */
+    float: center;
+    padding: var(--PADDING-TEXT);
+} 
 
 
 /* content */

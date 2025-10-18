@@ -1,5 +1,5 @@
 function hamburger() {
-    var x = document.getElementById("navigation-list")
+    var x = document.querySelector(".navigation")
     if (x.style.display === "block") {
         x.style.display = "none"
     } else {
