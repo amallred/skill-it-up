@@ -5,6 +5,9 @@ Intentional layout of CSS styling
 
 TO DO:
 - Hamburger menu
+  - in progress; https://threkk.medium.com/how-to-make-a-css-only-hamburger-menu-f7ad41e13399
 - add hover & click interactions with buttons
 - look up how to automatically make columns based on list length for ingredients
-- 
+- Link headers and footers across the site
+- Make a logo
+  - using an svg is proving very difficult; I resaved as png for now

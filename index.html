@@ -11,19 +11,25 @@
 </head>
 <body>
     
-    <header class="top-header" role="banner"> 
-        <!-- image logo -->
+    <header class="top-header" role="banner">
         <figure>
-            <img class="logo">
+        <a href="index.html"><img class="logo"src="./images/skillItUpLogo.png"></a>
             <figcaption></figcaption>
         </figure>
         
         <nav class="navigation">
-            <a href="" class="header light-text nav-btn">Kitchen</a>
-            <a href="" class="header light-text nav-btn">Recipes</a>
-            <a href="" class="header light-text nav-btn">Tips & Tricks</a>
-            <!-- <a href="" class="header light-text nav-btn">Share a Recipe</a> -->
-            <!-- <a href="" class="header light-text nav-btn">My Cookbook</a> -->
+            <!-- hamburger menu  -->
+                <!-- <a href="javascript:void(0);" class="hamburger" onclick ="hamburger()">
+                <img id="hamburger" src="./images/hamburger.svg.png">
+                </a> -->
+            <!-- collapsible menu  -->
+            <div id="navigation-list">
+                <a href="index.html" class="header light-text nav-btn">Kitchen</a>
+                <a href="recipe.html" class="header light-text nav-btn">Recipes</a>
+                <a href="" class="header light-text nav-btn">Tips & Tricks</a>
+                <!-- <li><a href="" class="header light-text nav-btn">Share a Recipe</a></li> -->
+                <!-- <li><a href="" class="header light-text nav-btn">My Cookbook</a></li> -->
+            </div>    
         </nav>
     </header>
 
@@ -33,10 +39,10 @@
         <article class="tile">
             <figure>
                 <img class="recipe-img">
-                <figcaption></figcaption>
+                <figcaption></figcaption> <!--need to add this-->
             </figure>
             <section class="main-article-description"> <!--class not applied anywhere-->
-                <h2 class="header">Recipe Name</h2> 
+                <h2 class="header lig">Recipe Name</h2> 
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil nisi officia itaque culpa assumenda, debitis est vero error ipsa laborum porro voluptatem nam nostrum quasi? Debitis odit iusto nostrum labore.</p>
                 <button class="button"><a href="/recipe.html" class="btn-text">Let's cook!</a></button>
             </section>
@@ -45,7 +51,7 @@
         <article class="tile">
             <figure>
                 <img class="recipe-img">
-                <figcaption></figcaption>
+                <figcaption></figcaption><!--need to add this-->
             </figure>
             <section class="main-article-description">
                 <h2 class="header">Recipe Name</h2>
@@ -57,7 +63,7 @@
         <article class="tile">
             <figure>
                 <img class="recipe-img">
-                <figcaption></figcaption>
+                <figcaption></figcaption><!--need to add this-->
             </figure>
             <section class="main-article-description">
                 <h2 class="header">Recipe Name</h2>
@@ -70,26 +76,28 @@
 
     <aside class="container tips">
         <h2 class="header light-text">Tips & Tricks</h2>
-        <section class="tile">
-            <h3 class="header">Tip or Trick</h3>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </section>
+        <div class="tip-tiles">
+            <section class="tile">
+                <h3 class="header">Tip or Trick</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </section>
 
-        <section class="tile">
-            <h3 class="header">Tip or Trick</h3>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </section>
+            <section class="tile">
+                <h3 class="header">Tip or Trick</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </section>
 
-        <!-- <section class="tile">
-            <h3 class="header">Tip or Trick</h3>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </section>
+            <!-- <section class="tile">
+                <h3 class="header">Tip or Trick</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </section>
 
-        <section class="tile">
-            <h3 class="header">Tip or Trick</h3>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </section> -->
-        <p class="text light-text">Check out more tips here!</p>
+            <section class="tile">
+                <h3 class="header">Tip or Trick</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </section> -->
+        </div>
+            <p class="text light-text">Check out more tips here!</p>
 
 
     </aside>
@@ -97,6 +105,8 @@
 <footer class="footer">
     <p class="footer-text">Created by Amanda Allred</p>
 </footer>
+
+<script src="/index.js"></script>
 
 </body>
 </html>

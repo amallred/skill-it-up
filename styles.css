@@ -62,10 +62,10 @@ ol {
     /* STANDARD PADDING */
     --PADDING-TEXT: .5rem .75rem;
     --PADDING-HEADER: .25rem .75rem;
-    --PADDING-BOX: 1.5rem;
+    --PADDING-BOX: 1rem;
 
     /* STANDARD MARGIN */
-    --MARGIN: .75rem;
+    --MARGIN: 1rem;
     /* CHANGE TO CLAMP LATER! */
 
     /*  ==================
@@ -138,12 +138,45 @@ body {
 
 .top-header{
     background-color: var(--green);
-    display: flex;justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: var(--PADDING-BOX);
     margin-bottom: 1.5rem;
     grid-area: header;
+    padding: 1rem 3rem;
 }
 
+.logo { 
+    height: 4rem;
+    width: auto;
+}
+
+/* || MOBILE HAMBURGER MENU || */
+
+/* #hamburger {
+    height: 2rem;
+    display: block;
+    position: absolute;
+}
+
+#navigation-list {
+    display: none;
+}
+
+#navigation-list a {
+    display: block;
+}
+
+.navigation {
+    overflow: hidden;
+    position: relative;
+} */
+
+
+/* content */
 .content {
     grid-area: content;
 }
@@ -195,6 +228,20 @@ body {
     font-family: var(--header-font);
 }
 
-/* .nav-btn {
+@media only screen and (min-width: 768px){
+    :root {
+        /* STANDARD MARGIN */
+        --MARGIN: 1.5rem;
+    }    
+    .main, .tip-tiles {
+        display: flex;
+        flex-direction: row;
+        justify-items: stretch;
+    }
+    .recipe-tiles {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-items: stretch;
+    }
 
-} */
+} 
