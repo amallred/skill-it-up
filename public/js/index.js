@@ -18,9 +18,9 @@ function addHeader() {
         
         <nav class="navigation">
             <a href="index.html" class="header light-text nav-btn">Kitchen</a>
-            <a href="recipe.html" class="header light-text nav-btn">Recipes</a>
+            <a href="recipes.html" class="header light-text nav-btn">Recipes</a>
             <a href="" class="header light-text nav-btn">Tips & Tricks</a>
-            <a href="" class="header light-text nav-btn">Share a Recipe</a>
+            <a href="share.html" class="header light-text nav-btn">Share a Recipe</a>
             <!-- <a href="" class="header light-text nav-btn">My Cookbook</a> -->
 
         </nav>
@@ -41,3 +41,29 @@ function addFooter() {
 
 document.addEventListener("DOMContentLoaded", addHeader)
 document.addEventListener("DOMContentLoaded", addFooter)
+
+const form = document.querySelector("form")
+
+form.addEventListener("submit", async e => {
+    e.preventDefault()
+    const data = new FormData(form)
+
+    const newEntry = {
+        // id: ,
+        name: data.get("recipe name")
+    }
+
+    try {
+        const postRequest = await fetch("http://localhost:5000/api/recipes", {
+            method: "POST",
+            body: JSON.stringify(newEntry),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        })
+    } catch (error) {
+        console.error(error.message)
+    }
+
+    form.reset()
+})

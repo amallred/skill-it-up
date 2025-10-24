@@ -112,6 +112,7 @@ ol {
 
 .recipe-card {
     text-align: center;
+    width: 75dvw;
 }
 
 .ingredient-list, .directions {
@@ -260,6 +261,12 @@ body {
         justify-items: stretch;
     }
 
+    .recipe-list-tile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        justify-content: space-around;
+    }
     
     .navigation {
     display: block !important;

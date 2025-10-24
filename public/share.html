@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Skill It Up! | Share</title>
+    <!-- Make and insert a favicon -->
+</head>
+<body>
+    
+    <header class="top-header" role="banner">
+        <!-- Content populated by index.js  -->
+    </header>
+
+    <div class="content">
+
+    <main class="main container recipe-container">
+        
+        <article class="recipe-card">
+            <h2 class="header">Share a recipe!</h2>
+            <div class="recipe-tiles">
+                <form method="POST" action="/api/recipes">
+                    <input
+                        name ="name"
+                        type = "text"
+                        placeholder="Recipe Name"
+                        aria-label = "Recipe Name"
+                        required
+                    />
+                    <button type = "submit">Submit Recipe</button>
+                </form>
+            </div>                        
+            </section>
+        </article>
+    </main>
+
+    <aside class="container tips">
+        <h2 class="header light-text">Tips & Tricks</h2>
+        <div class="tip-tiles">
+            <section class="tile">
+                <h3 class="header">Tip or Trick</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </section>
+
+            <section class="tile">
+                <h3 class="header">Tip or Trick</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </section>
+        </div>
+        <p class="text light-text">Check out more tips here!</p>
+
+
+    </aside>
+    </div>
+<footer class="footer">
+    <!-- Content populated by index.js  -->
+</footer>
+
+<script src="../public/js/index.js"></script>
+
+</body>
+</html>
