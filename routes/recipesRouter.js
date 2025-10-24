@@ -3,6 +3,7 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 import fs from 'fs/promises'
 
+// import { recipes } from '../data/recipes.js'
 const recipeRouter = express.Router()
 
 const __filename = fileURLToPath(import.meta.url)
@@ -15,7 +16,7 @@ const recipesFilePath = path.join(
 )
 
 async function getAllRecipes() {
-    try {
+try {
         const recipeData = await fs.readFile(recipesFilePath)
         const recipes = JSON.parse(recipeData)
 
@@ -26,6 +27,7 @@ async function getAllRecipes() {
 }
 
 // need to make an index page that links with ids I think...
+
 async function getRecipeById(recipeId){ 
     try {
         const id = parseInt(recipeId)
@@ -51,7 +53,7 @@ async function createRecipe(reqBody) {
             name: reqBody.name
         }
         
-        if (!newRecipe.name || !newRecipe.show) {
+        if (!newRecipe.name) {
             return undefined
         }
         
@@ -64,6 +66,7 @@ async function createRecipe(reqBody) {
         console.error('error', error.message)
     }
 }
+
 
 recipeRouter.get('/', async (req, res) => {
     const recipes = await getAllRecipes()
@@ -86,9 +89,11 @@ recipeRouter.get('/:id', async(req, res) => {
     })
 })
 
+
+
 recipeRouter.post('/', async (req, res) => {
     try {
-        if (req.body) {
+        if (!req.body) {
             return res.status(400).json({
                 data: 'Bad Request. Missing required information'
             })
@@ -109,6 +114,7 @@ recipeRouter.post('/', async (req, res) => {
     } catch (error) {
         console.error('error', error.message)        
     }
-})
+}) 
+
 
 export default recipeRouter
