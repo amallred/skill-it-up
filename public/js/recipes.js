@@ -14,7 +14,7 @@ function createRecipeCard(recipeName) {
     const card = document.createElement('article') 
     
     const recipeLink = document.createElement('a') //won't have h3 tag
-    recipeLink.href = `../share.html?id=${recipe.id}` //where does the id come from?
+    recipeLink.href = `../share.html?id=${recipeName.id}` //where does the id come from?
     recipeLink.textContent = recipeName.name
     card.appendChild(recipeLink)
 
@@ -31,4 +31,4 @@ async function renderCards() {
         console.error(error.message)
     }
 }
-await renderCards()
+await renderCards() 
