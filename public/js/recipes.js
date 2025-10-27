@@ -10,18 +10,19 @@ async function getRecipes() {
 }
 
 function createRecipeCard(recipeName) {
-    const recipeButton = document.getElementById("recipe-name-container")
-    const card = document.createElement('article') 
-    
-    const recipeLink = document.createElement('a') //won't have h3 tag
+    const recipeContainer = document.getElementById("recipe-tiles")
+    const recipeTile = document.createElement("section") // Should these be sections or articles?
+    const recipe = document.createElement('h3')
+    const recipeLink = document.createElement('a')
+
+    recipeTile.classList.add("tile")
+    recipe.classList.add("header")
     recipeLink.href = `../share.html?id=${recipeName.id}`
     recipeLink.textContent = recipeName.name 
     
-    // create header with class;  append 'a' to it, append to card
-    
-    card.appendChild(recipeLink)
-
-    recipeButton.appendChild(card)
+    recipe.appendChild(recipeLink) // link added to heading
+    recipeTile.appendChild(recipe) // heading added to tile
+    recipeContainer.appendChild(recipeTile) // tile added to container
 }
 
 async function renderCards() {

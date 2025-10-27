@@ -10,6 +10,8 @@ function hamburger() {
 function addHeader() {
     const header = document.querySelector(".top-header")
     
+// Restructure this to NOT use innerHTML
+
     header.innerHTML =`
         <figure>
         <a href="index.html"><img class="logo"src="./images/skillItUpLogo.png"></a>
@@ -42,31 +44,3 @@ function addFooter() {
 
 document.addEventListener("DOMContentLoaded", addHeader)
 document.addEventListener("DOMContentLoaded", addFooter)
-
-const form = document.querySelector("form")
-
-// Move form to its own js file
-
-form.addEventListener("submit", async e => {
-    e.preventDefault()
-    console.log('Form submitted')
-    const data = new FormData(form)
-
-    const newEntry = {
-        name: data.get("name")
-    }
-
-    try {
-        const postRequest = await fetch("http://localhost:5000/api/recipes", {
-            method: "POST",
-            body: JSON.stringify(newEntry),
-            headers: {
-                "Content-type": "application/json; charset=UTF-8"
-            }
-        })
-    } catch (error) {
-        console.error(error.message)
-    }
-
-    form.reset()
-})
