@@ -14,8 +14,11 @@ function createRecipeCard(recipeName) {
     const card = document.createElement('article') 
     
     const recipeLink = document.createElement('a') //won't have h3 tag
-    recipeLink.href = `../share.html?id=${recipeName.id}` //where does the id come from?
-    recipeLink.textContent = recipeName.name
+    recipeLink.href = `../share.html?id=${recipeName.id}`
+    recipeLink.textContent = recipeName.name 
+    
+    // create header with class;  append 'a' to it, append to card
+    
     card.appendChild(recipeLink)
 
     recipeButton.appendChild(card)

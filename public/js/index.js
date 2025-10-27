@@ -9,7 +9,7 @@ function hamburger() {
 
 function addHeader() {
     const header = document.querySelector(".top-header")
-
+    
     header.innerHTML =`
         <figure>
         <a href="index.html"><img class="logo"src="./images/skillItUpLogo.png"></a>
@@ -29,6 +29,7 @@ function addHeader() {
             <img id="hamburger" src="./images/hamburger.svg.png">
             </a>
     `
+    console.log("I'm working")
 }
 
 function addFooter() {
@@ -44,13 +45,14 @@ document.addEventListener("DOMContentLoaded", addFooter)
 
 const form = document.querySelector("form")
 
+// Move form to its own js file
+
 form.addEventListener("submit", async e => {
     e.preventDefault()
     console.log('Form submitted')
     const data = new FormData(form)
 
     const newEntry = {
-        // id: ___ +1, Don't we need to do something here?
         name: data.get("name")
     }
 
