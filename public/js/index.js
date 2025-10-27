@@ -46,11 +46,12 @@ const form = document.querySelector("form")
 
 form.addEventListener("submit", async e => {
     e.preventDefault()
+    console.log('Form submitted')
     const data = new FormData(form)
 
     const newEntry = {
-        // id: ,
-        name: data.get("recipe name")
+        // id: ___ +1, Don't we need to do something here?
+        name: data.get("name")
     }
 
     try {

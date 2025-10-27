@@ -69,7 +69,9 @@ async function createRecipe(reqBody) {
 
 
 recipeRouter.get('/', async (req, res) => {
+    console.log('GET /api/recipes called') // Suggestion from ChatGPT
     const recipes = await getAllRecipes()
+    console.log("Recipes:", recipes) // Suggestion from ChatGPT
     res.status(200).json({
         data: recipes
     })

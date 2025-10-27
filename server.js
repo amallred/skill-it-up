@@ -1,17 +1,16 @@
 import express from 'express'
-import recipesRouter from './routes/recipesRouter.js'
 import cors from 'cors'
+import recipesRouter from './routes/recipesRouter.js'
 
 const app = express()
 const port = 5000
 
+app.use(cors)
+
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-
 // app.use(express.static('./public'))
-// app.use(cors)
-
 
 app.use('/api/recipes', recipesRouter)
 
