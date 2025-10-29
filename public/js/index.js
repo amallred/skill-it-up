@@ -31,7 +31,6 @@ function addHeader() {
             <img id="hamburger" src="./images/hamburger.svg.png">
             </a>
     `
-    console.log("I'm working")
 }
 
 function addFooter() {
