@@ -6,8 +6,14 @@ form.addEventListener("submit", async e => {
     const data = new FormData(form)
 
     const newEntry = {
-        name: data.get("name")
+        name: data.get("name"),
+        description: data.get("description"),
+        ingredients: data.get("ingredients"),
+        steps: data.get("steps"),
+        notes: data.get("notes")
     }
+
+    console.log(newEntry)
 
     try {
         const postRequest = await fetch("http://localhost:5000/api/recipes", {

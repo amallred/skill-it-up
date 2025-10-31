@@ -50,7 +50,11 @@ async function createRecipe(reqBody) {
         
         const newRecipe = {
             id: recipes.length +1,
-            name: reqBody.name
+            name: reqBody.name,
+            description: reqBody.description,
+            ingredients: reqBody.ingredients,
+            steps: reqBody.steps,
+            notes: reqBody.notes
         }
         
         if (!newRecipe.name) {
@@ -108,7 +112,7 @@ recipeRouter.post('/', async (req, res) => {
                 data: 'Bad Request. Missing required information'
         })
     }
-
+    console.log(req.body) // testing form
     res.status(201).json({
         data: newRecipe
     })

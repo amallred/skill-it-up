@@ -44,3 +44,4 @@ http://localhost:5000
   - [x] using an svg is proving very difficult; I re-saved as png for now
 - [ ] Fix Tips & Tricks box css
 - [ ] ?? Where did the .vscode folder come from?
+- [ ] Add name of website to larger screens in addition to logo

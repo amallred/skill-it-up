@@ -54,5 +54,13 @@
     "ingredients": "",
     "steps": "",
     "notes": ""
+  },
+  {
+    "id": 8,
+    "name": "Egg drop soup",
+    "description": "warming yummy soup!",
+    "ingredients": "4 c chicken broth\n1/2 t garlic powder\n1 t ginger powder\n3 eggs\n2 T corn starch",
+    "steps": "Heat broth to boiling after adding cornstarch and seasonings\nwhen boiling, stir in whisked eggs\nenjoy!",
+    "notes": "can be served with green onions"
   }
 ]
