@@ -10,12 +10,46 @@ function hamburger() {
 function addHeader() {
     const header = document.querySelector(".top-header")
     
-// Restructure this to NOT use innerHTML
+    // // || logo ||
+    // const logoContainer = document.createElement("figure")
+    // const logoLink = document.createElement("a")
+    // logoLink.href = "index.html"
+
+    // const logo = document.createElement("img")
+    // logo.src = "./images/skillItUpLogo.png"
+    // logo.classList.add("logo")
+    
+    // logoLink.appendChild(logo)
+    // logoContainer.appendChild(logoLink)
+
+    // // || navigation ||
+
+
+    // const navigation = document.createElement("nav").classList.add("navigation")
+    // const kitchenBtn = document.createElement("a").classList.add("header", "light-text", "nav-btn")
+    // const recipesBtn = document.createElement("a").classList.add("header", "light-text", "nav-btn")
+    // const tipsBtn = document.createElement("a").classList.add("header", "light-text", "nav-btn")
+    // const shareBtn = document.createElement("a").classList.add("header", "light-text", "nav-btn")
+
+    // kitchenBtn.textContent = "Kitchen"
+    // recipesBtn.textContent = "Recipes"
+    // tipsBtn.textContent = "Tips & Tricks"
+    // shareBtn.textContent = "Share a Recipe"
+
+
+
+    // navigation.appendChild(kitchenBtn)
+    // navigation.appendChild(recipesBtn)
+    // navigation.appendChild(tipsBtn)
+    // navigation.appendChild(shareBtn)
+
+    // header.appendChild(logoContainer)
+
+// Restructure this to NOT use innerHTML (in progress above)
 
     header.innerHTML =`
         <figure>
         <a href="index.html"><img class="logo"src="./images/skillItUpLogo.png"></a>
-            <figcaption></figcaption>
         </figure>
         
         <nav class="navigation">

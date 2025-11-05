@@ -3,54 +3,54 @@
     "id": 1,
     "name": "Grilled Cheese",
     "description": "A quick and easy, classic, crunchy, and gooey sandwich.",
-    "ingredients": "2 slices of bread \n 2 T mayonnaise \n 1-2 slices American cheese \n ",
+    "ingredients": "2 slices of bread \n 2 T mayonnaise \n 1-2 slices American cheese\n",
     "steps": "Preheat skillet over medium heat \n Spread a thin layer of mayonnaise on one side of each piece of bread \n Assemble sandwich with cheese slice(s) in between the bread with the mayonnaise on the outside of the sandwich \n Place the sandwich in the pan and flip when desired doneness has been reached (about 2 minutes) \n Repeat on the other side \n Remove from pan, cut, and enjoy!",
-    "notes": ""
+    "notes": "Enjoy with a bowl of Tomato Soup! \n"
   },
   {
     "id": 2,
-    "description": "",
     "name": "Tomato Soup",
+    "description": "",
     "ingredients": "",
     "steps": "",
     "notes": ""
   },
   {
     "id": 3,
-    "description": "",
     "name": "Sour Cream Chicken Enchiladas",
+    "description": "",
     "ingredients": "",
     "steps": "",
     "notes": ""
   },
   {
     "id": 4,
-    "description": "",
     "name": "Oatmeal",
+    "description": "",
     "ingredients": "1/2 c rolled oats \n 2 T peanut butter \n 1/2 t vanilla extract \n 1/4-1/2 t cinnamon \n 1 t brown sugar \n pinch salt \n OPT 1 T flax seed \n OPT 1 T wheat germ \n OPT 1/2 banana mashed",
     "steps": "Combine all ingredients except brown sugar, flax seed, and wheat germ (if using) \n Add 3/4 -1 c water \n Microwave 90 seconds \n Add additional ingredients (if using). Stir until peanut butter is fully incorporated. \n Allow to sit 1-2 minutes to thicken before enjoying",
     "notes": "Flax seed and wheat germ have cholesterol-lowering properties."
   },
   {
     "id": 5,
-    "description": "",
     "name": "Guacamole",
+    "description": "",
     "ingredients": "2-3 fresh avocados* \n 2 T sour cream \n 1-2 T lemon or lime juice \n salsa (to taste) \n  paprika (to taste) \n garlic powder (to taste) \n onion powder (to taste) \n salt and pepper",
     "steps": "Halve avocado and scoop out the green flesh into a medium sized bowl, discarding the pit \n Add the rest of the ingredients, tasting as you go**",
     "notes": "*To check avocados for freshness, gently squeeze the fruit. It should be soft with a little give. \n **All measurements are approximate, experiment and find the combination you like best! You can try dividing the mashed avocado between bowls and adding more or less of each ingredient to see how each impacts the taste."
   },
   {
     "id": 6,
-    "description": "",
     "name": "PB&J",
+    "description": "",
     "ingredients": "",
     "steps": "",
     "notes": ""
   },
   {
     "id": 7,
-    "description": "",
     "name": "chicken noodle soup",
+    "description": "",
     "ingredients": "",
     "steps": "",
     "notes": ""

@@ -20,7 +20,8 @@
     <main class="main container recipe-container">
         
         <article class="recipe-card">
-            <h2 class="header">Recipe Name</h2> <!--figure out styling for this-->
+            <h2 class="header" id="recipe-name">Recipe Name</h2>
+            <p id="description">...</p> <!--figure out styling for this-->
             <div class="recipe-tiles">
                 <section class="tile">
                     <!-- <figure>
@@ -28,11 +29,11 @@
                         <figcaption></figcaption>
                     </figure> -->
                     <h3 class="header">Ingredients</h3> <!--figure out styling for this-->
-                        <ul class="ingredient-list">
-                            <li class="ingredient">Ingredient</li>
-                            <li class="ingredient">Ingredient</li>
-                            <li class="ingredient">Ingredient</li>
-                            <li class="ingredient">Ingredient</li>
+                        <ul class="ingredient-list" id="ingredient-list">
+                            <!-- <li>Ingredient</li>
+                            <li>Ingredient</li>
+                            <li>Ingredient</li>
+                            <li>Ingredient</li> -->
                         </ul>
                 </section>
                 
@@ -48,12 +49,19 @@
                             
                 <section class="tile">
                     <h3 class="header">Cooking Directions</h3>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <ol class="directions">
-                            <li>Here are some cooking directions</li>
-                            <li>Here are some cooking directions</li>
-                            <li>Here are some cooking directions</li>
-                        </ol>
+                    <ol class="directions" id="directions"> <!--Fix styling to show numbers-->
+                        <!-- <li>Here are some cooking directions</li>
+                        <li>Here are some cooking directions</li>
+                        <li>Here are some cooking directions</li> -->
+                    </ol>
+                </section>
+                <section class="tile">
+                    <h3 class="header">Notes</h3>
+                    <ol class="directions" id="notes"> <!--Fix styling to show numbers-->
+                        <!-- <li>Here are some notes</li>
+                        <li>Here are some notes</li>
+                        <li>Here are some notes</li>-->
+                    </ol>
                 </section>
             </div>                        
             </section>
