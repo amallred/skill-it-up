@@ -16,7 +16,7 @@ async function getRecipe(id) {
     }
 }
 
-async function displayRecipe(id) { // make sure to add sections for the description and notes
+async function displayRecipe(id) { 
     const recipe = await getRecipe(id)
     
     // || DISPLAY RECIPE NAME ||
@@ -56,10 +56,14 @@ async function displayRecipe(id) { // make sure to add sections for the descript
     })
     
     // || DISPLAY NOTES ||
-    // add logic to change display to none on the container if there are no notes
     const notesList = document.getElementById("notes")
     const notesArray = recipe.notes.split("\n")
     const notes = notesArray.filter(note => note != "")
+    
+    if (notesArray.length <= 1) {
+        const notesSection = document.getElementById("notes-section")
+        notesSection.style.display = "none"
+    }
 
     notes.forEach(note => {
         if (note != "") {
