@@ -1,79 +1,32 @@
-function hamburger() {
-    var x = document.querySelector(".navigation")
-    if (x.style.display === "block") {
-        x.style.display = "none"
-    } else {
-        x.style.display = "block"
+async function getRecipes() {
+    try {
+        const res = await fetch("http://localhost:5000/api/recipes")
+        const parsedData = await res.json()
+
+        return parsedData.data
+    } catch (error) {
+        console.error(error.message)
     }
 }
 
-function addHeader() {
-    const header = document.querySelector(".top-header")
+function createRecipePreviews() { //what params?
+
+    // Pull 3 random recipes
+    // Loop through recipes to create 3 cards
+
+    // Create elements
+    const article = document.createElement("article")
+    const recipeHeader = document.createElement("h2")
+    const recipeDescription = document.createElement("p")
+    const recipeButton = document.createElement("button")
+    const recipeLink = document.createElement("a")
+
+    // Add classes to elements    
+    article.classList.add("tile")
+    recipeHeader.classList.add("header")
+    recipeDescription.classList.add("text")
+    recipeButton.classList.add("button")
+    recipeLink.classList.add("btn-text")
+
     
-    // // || logo ||
-    // const logoContainer = document.createElement("figure")
-    // const logoLink = document.createElement("a")
-    // logoLink.href = "index.html"
-
-    // const logo = document.createElement("img")
-    // logo.src = "./images/skillItUpLogo.png"
-    // logo.classList.add("logo")
-    
-    // logoLink.appendChild(logo)
-    // logoContainer.appendChild(logoLink)
-
-    // // || navigation ||
-
-
-    // const navigation = document.createElement("nav").classList.add("navigation")
-    // const kitchenBtn = document.createElement("a").classList.add("header", "light-text", "nav-btn")
-    // const recipesBtn = document.createElement("a").classList.add("header", "light-text", "nav-btn")
-    // const tipsBtn = document.createElement("a").classList.add("header", "light-text", "nav-btn")
-    // const shareBtn = document.createElement("a").classList.add("header", "light-text", "nav-btn")
-
-    // kitchenBtn.textContent = "Kitchen"
-    // recipesBtn.textContent = "Recipes"
-    // tipsBtn.textContent = "Tips & Tricks"
-    // shareBtn.textContent = "Share a Recipe"
-
-
-
-    // navigation.appendChild(kitchenBtn)
-    // navigation.appendChild(recipesBtn)
-    // navigation.appendChild(tipsBtn)
-    // navigation.appendChild(shareBtn)
-
-    // header.appendChild(logoContainer)
-
-// Restructure this to NOT use innerHTML (in progress above)
-
-    header.innerHTML =`
-        <figure>
-        <a href="index.html"><img class="logo"src="./images/skillItUpLogo.png"></a>
-        </figure>
-        
-        <nav class="navigation">
-            <a href="index.html" class="header light-text nav-btn">Kitchen</a>
-            <a href="recipes.html" class="header light-text nav-btn">Recipes</a>
-            <a href="" class="header light-text nav-btn">Tips & Tricks</a>
-            <a href="share.html" class="header light-text nav-btn">Share a Recipe</a>
-            <!-- <a href="" class="header light-text nav-btn">My Cookbook</a> -->
-
-        </nav>
-        <!-- hamburger menu  -->
-            <a href="javascript:void(0);" class="hamburger" onclick ="hamburger()">
-            <img id="hamburger" src="./images/hamburger.svg.png">
-            </a>
-    `
 }
-
-function addFooter() {
-    const footer = document.querySelector(".footer")
-
-    footer.innerHTML=`
-        <p class="footer-text">Created by Amanda Allred</p>
-`
-}
-
-document.addEventListener("DOMContentLoaded", addHeader)
-document.addEventListener("DOMContentLoaded", addFooter)
