@@ -2,17 +2,16 @@ async function getRecipes() {
     try {
         const res = await fetch("http://localhost:5000/api/recipes")
         const parsedData = await res.json()
-
+        console.log(parsedData)
         return parsedData.data
     } catch (error) {
         console.error(error.message)
     }
 }
 
-function createRecipePreviews() { //what params?
+async function createRecipePreviews(recipeName) { 
 
-    // Pull 3 random recipes
-    // Loop through recipes to create 3 cards
+    const recipeContainer = document.getElementById("recipeContainer")
 
     // Create elements
     const article = document.createElement("article")
@@ -28,5 +27,29 @@ function createRecipePreviews() { //what params?
     recipeButton.classList.add("button")
     recipeLink.classList.add("btn-text")
 
+    // Populate content
+    recipeLink.textContent = "Let's cook!"
+    recipeLink.href = `../recipe.html?id=${recipeName.id}`
+    recipeDescription.textContent = recipeName.description 
+    recipeHeader.textContent = recipeName.name
     
+    // recipeButton.appendChild()
+    recipeButton.appendChild(recipeLink)
+    article.appendChild(recipeHeader)
+    article.appendChild(recipeDescription)
+    article.appendChild(recipeButton)
+    recipeContainer.appendChild(article)
 }
+
+async function renderCards() {
+    try {
+        const recipes = await getRecipes()
+        recipes.forEach(recipe => 
+            createRecipePreviews(recipe)
+        )
+        // How do I limit this to 3 random recipes?
+    } catch (error) {
+        console.error(error.message)
+    }
+}
+renderCards()

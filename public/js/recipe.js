@@ -3,13 +3,16 @@
 // console.log([getRecipes])
 
 // I would like to import getRecipes from recipes.js, but am encountering errors.
+const queryString = window.location.search
+const params = new URLSearchParams(queryString)
+const recipeId = params.get("id")
 
 async function getRecipe(id) {
     try {
         const res = await fetch(`http://localhost:5000/api/recipes/${id}`)
         const parsedData = await res.json()
 
-        console.log(parsedData.data) 
+        // console.log(parsedData.data) 
         return parsedData.data
     } catch (error) {
         console.error(error.message)
@@ -59,11 +62,6 @@ async function displayRecipe(id) {
     const notesList = document.getElementById("notes")
     const notesArray = recipe.notes.split("\n")
     const notes = notesArray.filter(note => note != "")
-    
-    if (notesArray.length <= 1) {
-        const notesSection = document.getElementById("notes-section")
-        notesSection.style.display = "none"
-    }
 
     notes.forEach(note => {
         if (note != "") {
@@ -75,5 +73,5 @@ async function displayRecipe(id) {
 }
 
 // the next step is to have the id # change based on the selected recipe rather than default to 1 as below
-getRecipe(1)
-displayRecipe(1)
+getRecipe(recipeId)
+displayRecipe(recipeId)
