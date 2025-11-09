@@ -45,9 +45,15 @@ async function renderCards() {
     try {
         const recipes = await getRecipes()
         recipes.forEach(recipe => 
+            // How do I limit this to 3 random recipes?
+
+            // for (let i=0; i <= 3; i++) {
+                // something with Math.random() to randomly choose a recipe in the recipes variable
+            // }
+            
             createRecipePreviews(recipe)
         )
-        // How do I limit this to 3 random recipes?
+
     } catch (error) {
         console.error(error.message)
     }
