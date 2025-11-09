@@ -17,7 +17,7 @@ function createRecipeCard(recipeName) {
 
     recipeTile.classList.add("tile")
     recipe.classList.add("header")
-    recipeLink.href = `../share.html?id=${recipeName.id}`
+    recipeLink.href = `../recipe.html?id=${recipeName.id}`
     recipeLink.textContent = recipeName.name 
     
     recipe.appendChild(recipeLink) // link added to heading
