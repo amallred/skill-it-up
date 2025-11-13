@@ -11,11 +11,11 @@ async function getRecipes() {
 
 function createRecipeCard(recipeName) {
     const recipeContainer = document.getElementById("recipe-tiles")
-    const recipeTile = document.createElement("section") // Should these be sections or articles?
+    const recipeTile = document.createElement("button") // Should these be sections or articles?
     const recipe = document.createElement('h3')
     const recipeLink = document.createElement('a')
 
-    recipeTile.classList.add("tile")
+    recipeTile.classList.add("tile", "button")
     recipe.classList.add("header")
     recipeLink.href = `../recipe.html?id=${recipeName.id}`
     recipeLink.textContent = recipeName.name 

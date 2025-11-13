@@ -24,7 +24,7 @@ async function createRecipePreviews(recipeName) {
     article.classList.add("tile","featuredRecipes")
     recipeHeader.classList.add("header")
     recipeDescription.classList.add("text")
-    recipeButton.classList.add("button")
+    recipeButton.classList.add("button", "index-btn", "header")
     recipeLink.classList.add("btn-text")
 
     // Populate content
