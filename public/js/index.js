@@ -41,21 +41,44 @@ async function createRecipePreviews(recipeName) {
     recipeContainer.appendChild(article)
 }
 
+// async function renderCards() {
+//     try {
+//         const recipes = await getRecipes()
+//         recipes.forEach(recipe => 
+//             // How do I limit this to 3 random recipes?
+
+//             // for (let i=0; i <= 3; i++) {
+//                 // something with Math.random() to randomly choose a recipe in the recipes variable
+//             // }
+            
+//             createRecipePreviews(recipe)
+//         )
+
+//     } catch (error) {
+//         console.error(error.message)
+//     }
+// }
+// renderCards()
+
 async function renderCards() {
     try {
+        // Retrieve games
         const recipes = await getRecipes()
-        recipes.forEach(recipe => 
-            // How do I limit this to 3 random recipes?
 
-            // for (let i=0; i <= 3; i++) {
-                // something with Math.random() to randomly choose a recipe in the recipes variable
-            // }
-            
+        // Create a set to store 3 random unique recipes
+        const randomRecipes = new Set()
+        while (randomRecipes.size < 3) {
+            randomRecipes.add(recipes[Math.floor(Math.random() * recipes.length)])
+        }
+
+        // Store random recipes into an array
+        const featuredRecipes = Array.from(randomRecipes)
+
+        featuredRecipes.forEach(recipe => {
             createRecipePreviews(recipe)
-        )
-
+        })
     } catch (error) {
-        console.error(error.message)
+        console.error(error)
     }
 }
 renderCards()
