@@ -234,6 +234,14 @@ body {
 
 /* || RECIPES || */
 
+/*  YOU ARE HERE, AMANDA!*/
+/*  YOU ARE HERE, AMANDA!*/
+/*  YOU ARE HERE, AMANDA!*/
+/*  YOU ARE HERE, AMANDA!*/
+/*  YOU ARE HERE, AMANDA!*/
+/*  YOU ARE HERE, AMANDA!*/
+
+
 .recipe-card {
     text-align: center;
     width: 75dvw;
@@ -246,7 +254,35 @@ body {
 }
 
 
+/* || CHECKLIST RECIPE STEPS || */
 
+#directions li {
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    margin: 2rem;
+}
+
+#directions li::before {
+    content: '';
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    border: solid 2px var(--black);
+    background-size: cover;
+    background-position: center;
+    left: -2rem;
+}
+
+#directions li.checked {
+    color: var(--green);
+    text-decoration: line-through;
+}
+
+#directions li.checked::before {
+    background-color: var(--green);
+}
 
 /* || LARGER SCREENS (tablets and larger) || */
 

@@ -72,6 +72,20 @@ async function displayRecipe(id) {
     })
 }
 
+// || CHECKLIST FOR RECIPE || 
+
+const directionList = document.getElementById("ingredient-list")
+
+directionList.addEventListener("click", function(e){
+    console.log("task clicked")
+    if (e.target.tagName === "LI"){
+        e.target.classList.toggle("checked")
+    } 
+})
+
+
+
+
 // the next step is to have the id # change based on the selected recipe rather than default to 1 as below
 getRecipe(recipeId)
 displayRecipe(recipeId)

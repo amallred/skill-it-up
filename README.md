@@ -35,6 +35,8 @@ http://localhost:5000
 
 Thank you to Dan Collins for his guidance and support through this project.
 
+[List tutorial](https://www.youtube.com/watch?v=G0jO8kUrg-I&ab_channel=GreatStack)
+
 ---
 ### TO DO:
 - [x] Focus on proper semantic HTML
