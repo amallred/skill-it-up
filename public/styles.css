@@ -249,17 +249,22 @@ body {
     padding-left: 2rem;
 }
 
+#ingredients {
+    padding: .25rem;
+}
 
 /* || CHECKLIST RECIPE STEPS || */
 
-#directions li {
-    list-style: none;
+#directions li, #ingredients li 
+{
+list-style: none;
     cursor: pointer;
     position: relative;
     margin: 2rem;
 }
 
-#directions li::before {
+#directions li::before, #ingredients li::before
+ {
     content: '';
     position: absolute;
     height: 1.5rem;
@@ -271,12 +276,14 @@ body {
     left: -2rem;
 }
 
-#directions li.checked {
+#directions li.checked, #ingredients li.checked
+ {
     color: var(--green);
     text-decoration: line-through;
 }
 
-#directions li.checked::before {
+#directions li.checked::before, #ingredients li.checked::before
+ {
     background-color: var(--green);
 }
 
@@ -312,8 +319,10 @@ form >p {
 @media only screen and (min-width: 768px){
     :root {
         /* STANDARD MARGIN */
-        --MARGIN: 1.5rem;
+        --MARGIN: .25rem;
     }    
+    /* .content {
+    }     */
     .main {
         display: grid;
         grid-template-columns: 33% 33% 33%;
@@ -333,7 +342,7 @@ form >p {
         justify-items: stretch;
     }
     .container {
-        max-width: 75dvw;
+        min-width: 75dvw;
     }
     .recipe-container, .tips {
         max-width: 75dvw;
@@ -373,5 +382,4 @@ form >p {
     .hamburger {
         display: none;
     }
-
 } 
