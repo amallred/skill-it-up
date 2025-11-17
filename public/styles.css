@@ -1,10 +1,7 @@
 /* || RESET */
-*,
-*::after,
-*::before {
+*, *::after, *::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 img, picture, video {
@@ -163,13 +160,16 @@ body {
 
 
 /* || UNIVERSAL CONTENT TEMPLATES || */
-.content { /* all pages, holds main & aside */
+
+/* all pages, holds main & aside */
+.content { 
     display: grid;
     justify-items: center;
     grid-area: content;
 }
 
-.container { /* basic layout for all colored-background containers */ 
+/* basic layout for all colored-background containers */
+.container {  
     display: grid;
     padding: var(--PADDING-TEXT);
     box-shadow: var(--BOX-SHADOW);
@@ -177,7 +177,8 @@ body {
     max-width: 600px;
 }
 
-.tile { /* basic layout for all light bg containers */
+/* basic layout for all light bg containers */
+.tile { 
     margin: var(--MARGIN);
     border-radius: var(--BORDER-RADIUS);
     padding: var(--PADDING-TEXT);
@@ -186,20 +187,23 @@ body {
     border: 1px solid var(--black);
 }
 
-.main { /* basic bg color for all pages' main content */
+/* basic bg color for all pages' main content */
+.main { 
     background-color: var(--orange);
     margin: var(--MARGIN);
     border-radius: var(--BORDER-RADIUS);
 }
 
-.tips { /* basic bg color for tips container all pages */
+/* basic bg color for tips container all pages */
+.tips { 
     background-color: var(--red);
     margin: var(--MARGIN);
     border-radius: var(--BORDER-RADIUS);
     text-align: center;
 }
 
-.footer { /* basic layout for footer */
+/* basic layout for footer */
+.footer { 
     background-color: var(--green);
     text-align: center;
     padding: var(--PADDING-BOX);
@@ -225,7 +229,7 @@ body {
     transform: translateY(2px);
 }
 
- /* buttons on home page  */
+ /* buttons on home page and share */
 .index-btn {
     background-color: var(--green);
     color: var(--light);
@@ -234,23 +238,15 @@ body {
 
 /* || RECIPES || */
 
-/*  YOU ARE HERE, AMANDA!*/
-/*  YOU ARE HERE, AMANDA!*/
-/*  YOU ARE HERE, AMANDA!*/
-/*  YOU ARE HERE, AMANDA!*/
-/*  YOU ARE HERE, AMANDA!*/
-/*  YOU ARE HERE, AMANDA!*/
-
-
 .recipe-card {
     text-align: center;
     width: 75dvw;
+    box-sizing: content-box;
 }
 
 .ingredient-list, .directions {
     text-align: left;
     padding-left: 2rem;
-    list-style-type: circle; /* will be updating to be checkboxes */
 }
 
 
@@ -284,6 +280,33 @@ body {
     background-color: var(--green);
 }
 
+/* || SHARE A RECIPE FORM || */
+
+label {
+    display: block;
+    text-align: left;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: .5rem;
+    margin: .5rem 0;
+    display: inline-block;
+    border: 1px solid var(--black);
+    border-radius: var(--BORDER-RADIUS);
+    box-sizing: border-box;
+    background-color: var(--light);
+    resize: vertical;
+}
+
+form >p {
+    text-align: left;
+    padding: 0 .75rem;
+}
+
+.share-instructions {
+    padding: 1rem 0;
+}
 /* || LARGER SCREENS (tablets and larger) || */
 
 @media only screen and (min-width: 768px){
@@ -319,6 +342,21 @@ body {
         display: grid;
         grid-template-columns: 1fr 2fr;
         justify-items: stretch;
+        grid-template-areas:
+            "ingredients directions"
+            "notes notes"
+    }
+
+    #ingredients {
+        grid-area: ingredients;
+    }
+
+    #cooking-directions {
+        grid-area: directions;
+    }
+
+    #notes-section {
+        grid-area: notes;
     }
 
     .recipe-list-tile {

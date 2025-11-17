@@ -21,9 +21,11 @@
         
         <article class="recipe-card">
             <h2 class="header">Share a recipe!</h2>
-            <div class="recipe-tiles">
+            <p class="share-instructions">Thank you for contributing to our cookbook! To help with formatting, please press enter after each ingredient, cooking direction, or note. See our Tips & Tricks page for notes on measurement abbreviations.</p>
+            <!-- Link to tips & tricks page above -->
+            <div class="share-form">
                 <form method="POST" action="/api/recipes">
-                    <label>Recipe Name</label>
+                    <label class="header">Recipe Name</label>
                     <input
                         name ="name"
                         type = "text"
@@ -36,7 +38,8 @@
                         required
                     />
                     <!-- do i need to add the wrap attribute? -->
-                    <label>Recipe Description</label>
+                    <label class="header">Recipe Description (Tasty teaser!)</label>
+                    <p>One-sentence description of your recipe.</p>
                     <textarea
                         name ="description"
                         placeholder="Recipe Description"
@@ -48,8 +51,8 @@
                         rows="3"
                         required
                         ></textarea>
-                        <label>Ingredients</label>
-                        <textarea
+                    <label class="header">Ingredients</label>
+                    <textarea
                         name ="ingredients"
                         type = "text"
                         placeholder="Ingredients"
@@ -62,7 +65,7 @@
                         required
                     ></textarea>
                     <!-- look up jQuery or js code to expand textarea when "enter" is hit -->
-                    <label>Cooking Directions</label>
+                    <label class="header">Cooking Directions</label>
                     <textarea
                         name ="steps"
                         placeholder="Cooking Directions"
@@ -74,7 +77,7 @@
                         rows="20"
                         required
                     ></textarea>
-                    <label>Recipe Notes</label>
+                    <label class="header">Recipe Notes</label>
                     <textarea
                         name ="notes"
                         placeholder="Recipe Notes"
@@ -85,7 +88,7 @@
                         spellcheck="on"
                         rows="4"
                     ></textarea>
-                    <button type = "submit">Submit Recipe</button>
+                    <button type = "submit" class="button index-btn">Submit Recipe</button>
                 </form>
             </div>                        
             </section>
