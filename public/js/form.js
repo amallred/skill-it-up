@@ -16,7 +16,7 @@ form.addEventListener("submit", async e => {
     console.log(newEntry)
 
     try {
-        const postRequest = await fetch("http://localhost:5000/api/recipes", {
+        const postRequest = await fetch("http://localhost:2025/api/recipes", {
             method: "POST",
             body: JSON.stringify(newEntry),
             headers: {

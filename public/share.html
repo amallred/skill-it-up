@@ -25,7 +25,7 @@
             <!-- Link to tips & tricks page above -->
             <div class="share-form">
                 <form method="POST" action="/api/recipes">
-                    <label class="header">Recipe Name</label>
+                    <label class="header">Recipe Name*</label>
                     <input
                         name ="name"
                         type = "text"
@@ -38,7 +38,7 @@
                         required
                     />
                     <!-- do i need to add the wrap attribute? -->
-                    <label class="header">Recipe Description (Tasty teaser!)</label>
+                    <label class="header">Recipe Description (Tasty teaser!)*</label>
                     <p>One-sentence description of your recipe.</p>
                     <textarea
                         name ="description"
@@ -51,7 +51,7 @@
                         rows="3"
                         required
                         ></textarea>
-                    <label class="header">Ingredients</label>
+                    <label class="header">Ingredients*</label>
                     <textarea
                         name ="ingredients"
                         type = "text"
@@ -65,7 +65,7 @@
                         required
                     ></textarea>
                     <!-- look up jQuery or js code to expand textarea when "enter" is hit -->
-                    <label class="header">Cooking Directions</label>
+                    <label class="header">Cooking Directions*</label>
                     <textarea
                         name ="steps"
                         placeholder="Cooking Directions"
@@ -88,6 +88,7 @@
                         spellcheck="on"
                         rows="4"
                     ></textarea>
+                    <p><em>* indicates a required field</em></p>
                     <button type = "submit" class="button index-btn">Submit Recipe</button>
                 </form>
             </div>                        
