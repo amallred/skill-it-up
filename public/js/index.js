@@ -1,6 +1,6 @@
 async function getRecipes() {
     try {
-        const res = await fetch("http://localhost:5000/api/recipes")
+        const res = await fetch("http://localhost:2025/api/recipes")
         const parsedData = await res.json()
         // console.log(parsedData)
         return parsedData.data

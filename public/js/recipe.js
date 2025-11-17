@@ -9,7 +9,7 @@ const recipeId = params.get("id")
 
 async function getRecipe(id) {
     try {
-        const res = await fetch(`http://localhost:5000/api/recipes/${id}`)
+        const res = await fetch(`http://localhost:2025/api/recipes/${id}`)
         const parsedData = await res.json()
 
         // console.log(parsedData.data) 

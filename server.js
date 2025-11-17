@@ -3,7 +3,7 @@ import cors from 'cors'
 import recipesRouter from './routes/recipesRouter.js'
 
 const app = express()
-const port = 5000
+const port = 2025
 
 app.use(cors())
 
