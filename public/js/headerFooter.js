@@ -55,7 +55,7 @@ function addHeader() {
         <nav class="navigation">
             <a href="index.html" class="header light-text nav-btn">Kitchen</a>
             <a href="recipes.html" class="header light-text nav-btn">Recipes</a>
-            <a href="" class="header light-text nav-btn">Tips & Tricks</a>
+            <a href="tips.html" class="header light-text nav-btn">Tips & Tricks</a>
             <a href="share.html" class="header light-text nav-btn">Share a Recipe</a>
             <!-- <a href="" class="header light-text nav-btn">My Cookbook</a> -->
 

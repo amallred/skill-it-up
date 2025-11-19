@@ -62,20 +62,27 @@ async function displayRecipe(id) {
     const notesList = document.getElementById("notes")
     const notesArray = recipe.notes.split("\n")
     const notes = notesArray.filter(note => note != "")
+    const notesSection = document.getElementById("notes-section")
 
+    // Check if there are any notes to display
+    // Hide "Notes" section if not
+    if (recipe.notes.length === 0) {
+        console.log("array is empty")
+        notesSection.style.display = "none"
+    } 
+
+    // Create a bullet point for each note
     notes.forEach(note => {
-        if (note != "") {
             const newNote = document.createElement("li")
             newNote.textContent = note
-            notesList.appendChild(newNote) 
-        }
+            notesList.appendChild(newNote)
     })
 }
 
 // || CHECKLIST FOR RECIPE || 
 
 const directionList = document.getElementById("directions")
-const ingredientList = document.getElementById("ingredients")
+const ingredientsList = document.getElementById("ingredients")
 
 directionList.addEventListener("click", function(e){
     // console.log("task clicked")
@@ -84,7 +91,7 @@ directionList.addEventListener("click", function(e){
     } 
 })
 
-ingredientList.addEventListener("click", function(e){
+ingredientsList.addEventListener("click", function(e){
     console.log("task clicked")
     if (e.target.tagName === "LI"){
         e.target.classList.toggle("checked")

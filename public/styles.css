@@ -174,7 +174,7 @@ body {
     padding: var(--PADDING-TEXT);
     box-shadow: var(--BOX-SHADOW);
     margin: var(--MARGIN);
-    max-width: 600px;
+    width: 75dvw;
 }
 
 /* basic layout for all light bg containers */
@@ -257,10 +257,10 @@ body {
 
 #directions li, #ingredients li 
 {
-list-style: none;
+    list-style: none;
     cursor: pointer;
     position: relative;
-    margin: 2rem;
+    margin: 1rem .5rem;
 }
 
 #directions li::before, #ingredients li::before
@@ -285,6 +285,14 @@ list-style: none;
 #directions li.checked::before, #ingredients li.checked::before
  {
     background-color: var(--green);
+}
+
+/* NOTES LIST BULLET POINTS */
+.notes {
+    list-style-type:circle;
+}
+.notes li {
+    margin: 1rem .5rem;
 }
 
 /* || SHARE A RECIPE FORM || */
