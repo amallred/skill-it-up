@@ -17,10 +17,10 @@ const recipesFilePath = path.join(
 
 async function getAllRecipes() {
 try {
-        const recipeData = await fs.readFile(recipesFilePath)
-        const recipes = JSON.parse(recipeData)
+    const recipeData = await fs.readFile(recipesFilePath)
+    const recipes = JSON.parse(recipeData)
 
-        return recipes
+    return recipes
     } catch (error) {
         console.error('error', error.message)
     }

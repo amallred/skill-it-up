@@ -27,7 +27,7 @@ npm run dev
 ```
 5. Open your browser and navigate to:
 ```bash
-http://localhost:5000
+http://localhost:2025
 ```
 
 ---

@@ -1,8 +1,3 @@
-// import { getRecipes } from "./recipes.js";
-
-// console.log([getRecipes])
-
-// I would like to import getRecipes from recipes.js, but am encountering errors.
 const queryString = window.location.search
 const params = new URLSearchParams(queryString)
 const recipeId = params.get("id")

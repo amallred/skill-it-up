@@ -1,8 +1,102 @@
 [
   {
     "id": 1,
-    "title": "Teaspoon",
-    "abbreviation": "t or tsp",
-    "definition": "About 5 mL, ⅓ of a Tbsp"
+    "name": "Jeff Allred",
+    "tip": "Always use a good, sharp knife."
+  },
+  {
+    "id": 2,
+    "name": "Jeff Allred",
+    "tip": "No matter what it is, (for the most part) cook at a little lower temperature for a few minutes longer."
+  },
+  {
+    "id": 3,
+    "name": "Taressa Murphy",
+    "tip": "My air fryer, wooden spurtles, and ground beef chopper are super useful tools in the kitchen."
+  },
+  {
+    "id": 4,
+    "name": "Debbie Bunger",
+    "tip": "My instant read thermometer gets a lot of use in my kitchen."
+  },
+  {
+    "id": 5,
+    "name": "Karen Allred",
+    "tip": "When making homemade gravy, don’t use a spoon, use a spatula. It works out any lumps that you may have."
+  },
+  {
+    "id": 6,
+    "name": "Zoe Bentley",
+    "tip": "Err on the side of less: salt, turmeric (bitter), bouillon (salty). Err on the side of more: garlic, nutritional yeast, tomatoes. These can liven up bland/dull food with minimal effort: lemon/lime juice, hot sauce, quality balsamic vinegar, kimchi, pickled onions."
+  },
+  {
+    "id": 7,
+    "name": "Zoe Bentley",
+    "tip": "Useful items in my kitchen include a hanging pot rack and a dishwasher clean/dirty magnet."
+  },
+  {
+    "id": 8,
+    "name": "Rebecca Borden",
+    "tip": "Roasting veggies is magical! My kids actually ask for roasted broccoli."
+  },
+  {
+    "id": 9,
+    "name": "Brandy Barnett",
+    "tip": "If your recipe calls for Oregano, Rosemary, or Thyme and you are out. Italian seasoning will work as a substitute in a pinch."
+  },
+  {
+    "id": 10,
+    "name": "Brandy Barnett",
+    "tip": "If your recipe calls for milk and you are out or the milk has gone sour you can dilute heavy cream (equal amounts) with water also works with evaporated milk."
+  },
+  {
+    "id": 11,
+    "name": "Nick Gallegos",
+    "tip": "To avoid a tough and dense texture, handle ground meat as little as possible. Form hamburgers quickly to maintain juiciness. Also, don’t salt the meat mixture; instead, salt the finished patties while cooking. This prevents moisture from escaping the burger from the inside."
+  },
+  {
+    "id": 12,
+    "name": "Nick Gallegos",
+    "tip": "Always use a calibrated thermometer to check your food. It not only indicates whether the food is safe to consume but also helps you cook better-quality items. No more dry chicken! You can also pull meat out when they are 5-10 degrees below temp because they will continue to cook to the temp you need."
+  },
+  {
+    "id": 13,
+    "name": "Nick Gallegos",
+    "tip": "Home cooks should try and understand the “why” behind certain techniques and why food cooks the way it does. Treat it like a science experiment rather than just blindly following rules and not knowing why you’re doing the things you’re doing."
+  },
+  {
+    "id": 14,
+    "name": "Nick Gallegos",
+    "tip": "Always salt as you go instead of all at once. Start small, then add while cooking and after cooking until it’s to your liking. Kosher is best to use for cooking and easy to help not over salt your dish. Maldon is a great finishing salt. Always try your food while cooking and add more seasons as needed."
+  },
+  {
+    "id": 15,
+    "name": "Amanda Allred",
+    "tip": "Toast your rice in oil before cooking; you can even throw in some garlic or other aromatics at this stage. When adding water, don’t worry about precision, make it deep enough that when you touch the top of the water with your fingertip, it goes to your first knuckle. (Thanks, Josh Weissman!)"
+  },
+  {
+    "id": 16,
+    "name": "Amanda Allred",
+    "tip": "To add a bit of zest to a dish, add ranch dressing seasoning! This is also great to have on hand to mix with sour cream for a quick dip for a snack."
+  },
+  {
+    "id": 17,
+    "name": "Greg Whitworth",
+    "tip": "Measure your spices before you begin to keep your spice containers clean and not contaminated. Adding spices over a steaming dish can cause condensation to accumulate and ruin your spices."
+  },
+  {
+    "id": 18,
+    "name": "Austin Cox",
+    "tip": "Use measuring tools from the same set to maintain consistency of ratios; especially when baking. Sometimes different measuring sets don’t accurately measure the same amounts."
+  },
+  {
+    "id": 19,
+    "name": "Austin Cox",
+    "tip": "If your honey crystallizes, put the container in warm water for about 10 minutes to reconstitute it."
+  },
+  {
+    "id": 20,
+    "name": "Austin Cox",
+    "tip": "Use an oven-safe thermometer to test your oven’s temperature accuracy. Turn the oven on and when it says it’s reached the correct temperature, check the thermometer. It may read higher or lower. Adjust your oven temperatures based on the results. (Ex: if your oven was set to 300 F and the thermometer reads 275 F, add 25 F when following recipes.)"
   }
 ]
