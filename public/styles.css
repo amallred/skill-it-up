@@ -121,9 +121,19 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* margin-bottom: 1rem; */
     grid-area: header;
     padding: 0 3rem;
+}
+
+.title {
+    display: none;
+}
+
+.logo-title {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 1rem;
 }
 
 .logo { 
@@ -157,6 +167,10 @@ body {
     float: center;
     padding: var(--PADDING-TEXT);
 } 
+/* .top-header li {
+    display: inline-block;
+    padding: var(--PADDING-TEXT);
+}  */
 
 
 /* || UNIVERSAL CONTENT TEMPLATES || */
@@ -411,7 +425,9 @@ form >p {
         gap: 2rem;
         justify-content: space-around;
     }
-    
+    .title {
+        display: inline;
+    }
     .navigation {
     display: block !important;
     }
