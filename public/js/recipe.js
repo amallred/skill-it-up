@@ -80,9 +80,10 @@ const directionList = document.getElementById("directions")
 const ingredientsList = document.getElementById("ingredients")
 
 directionList.addEventListener("click", function(e){
-    // console.log("task clicked")
+    console.log("task clicked")
     if (e.target.tagName === "LI"){
         e.target.classList.toggle("checked")
+        // saveDirectionData()
     } 
 })
 
@@ -90,8 +91,19 @@ ingredientsList.addEventListener("click", function(e){
     console.log("task clicked")
     if (e.target.tagName === "LI"){
         e.target.classList.toggle("checked")
+        // saveIngredientData()
     } 
 })
+
+// Save checked/unchecked boxes to local storage
+// function saveDirectionData() {
+//     localStorage.setItem("data", directionList.innerHTML)
+//     console.log("direction saved")
+// }
+
+// function saveIngredientData() {
+//     localStorage.setItem("data", ingredientsList.innerHTML)
+// }
 
 getRecipe(recipeId)
 displayRecipe(recipeId)
