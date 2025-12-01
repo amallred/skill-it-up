@@ -26,8 +26,6 @@ try {
     }
 }
 
-// need to make an index page that links with ids I think...
-
 async function getRecipeById(recipeId){ 
     try {
         const id = parseInt(recipeId)
@@ -72,13 +70,41 @@ async function createRecipe(reqBody) {
 }
 
 
-recipeRouter.get('/', async (req, res) => {
-    // console.log('GET /api/recipes called') // Suggestion from ChatGPT
-    const recipes = await getAllRecipes()
-    // console.log("Recipes:", recipes) // Suggestion from ChatGPT
-    res.status(200).json({
-        data: recipes
-    })
+// recipeRouter.get('/', async (req, res) => {
+//     const recipes = await getAllRecipes()
+//     res.status(200).json({
+//         data: recipes
+//     })
+// })
+
+recipeRouter.get('/', async (req, res, next) => {
+    const recipes = await getAllRecipes(
+        req.params.id,
+        (data) => {
+            if (data) {
+                res.status(200).json({
+                    data: recipes
+                })
+            } else {
+                res.status(404).json({
+                    status: 404,
+                    statusText: "Not Found",
+                    message: `Recipe with id of ${req.params.id} not found`,
+                })
+                console.error(error)
+            }
+        }
+        // ,
+        // (err) => {
+        //     next(err)
+        // }
+        // I'm not sure what the above does
+        
+        // REFERENCE: highest-of-the-hi/routes/games.js lines 40-64?
+    )
+
+
+
 })
 
 recipeRouter.get('/:id', async(req, res) => {
