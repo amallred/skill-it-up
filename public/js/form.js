@@ -1,4 +1,5 @@
 const form = document.querySelector("form")
+const close = document.getElementById("closeBtn")
 
 form.addEventListener("submit", async e => {
     e.preventDefault()
@@ -35,4 +36,6 @@ form.addEventListener("submit", async e => {
     form.reset()
 })
 
-// I would like to have the confirmation message disappear when the user clicks out of the box and/or provide an x button to close it
+close.addEventListener("click", e => {
+    confirmation.style.display = "none"
+})

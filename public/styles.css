@@ -235,6 +235,16 @@ body {
     color: var(--light);
 }
 
+/* light colored buttons */
+.light-btn {
+    background-color: var(--light);
+    color: var(--black);
+}
+
+.close {
+    margin-top: 1rem;
+}
+
 
 /* || RECIPES || */
 
