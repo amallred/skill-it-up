@@ -31,12 +31,18 @@ http://localhost:2025
 ```
 
 ---
+## CAPSTONE FEATURES
+- Create a node.js web server using Express.js.
+- Create an API that implements HTTP requests for GET and POST. Data can be stored in a JSON file on the back-end
+- Analyze data that is stored in arrays, objects, sets or maps and display information about it in your app. 
+
+---
 ## ACKNOWLEDGEMENTS
 
 Thank you to Dan Collins for his guidance and support through this project.
 
 [List tutorial](https://www.youtube.com/watch?v=G0jO8kUrg-I&ab_channel=GreatStack)
-
+[Form confirmation message](https://www.tutorialpedia.org/blog/confirmation-on-form-submit-html-css/)
 ---
 ### TO DO:
 - [x] Focus on proper semantic HTML

@@ -322,6 +322,25 @@ form >p {
 .share-instructions {
     padding: 1rem 0;
 }
+
+/* || FORM CONFIRMATION \\ */
+.confirmation {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--green);
+    color: var(--light);
+    padding: var(--PADDING-BOX);
+    border-radius: var(--BORDER-RADIUS);
+    box-shadow: var(--BOX-SHADOW);
+}
+.confirmation a {
+    font-weight:bold;
+    text-decoration: underline;
+}
+
 /* || LARGER SCREENS (tablets and larger) || */
 
 @media only screen and (min-width: 768px){

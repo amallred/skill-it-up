@@ -4,6 +4,7 @@ form.addEventListener("submit", async e => {
     e.preventDefault()
     console.log('Form submitted')
     const data = new FormData(form)
+    const confirmation = document.getElementById('confirmation')
 
     const newEntry = {
         name: data.get("name"),
@@ -27,5 +28,11 @@ form.addEventListener("submit", async e => {
         console.error(error.message)
     }
 
+    // confirm("Thank you for sharing a recipe! Visit the <a href="recipes.html">recipes page</a> to see your entry!")
+
+    confirmation.style.display = "block"
+    
     form.reset()
 })
+
+// I would like to have the confirmation message disappear when the user clicks out of the box and/or provide an x button to close it
