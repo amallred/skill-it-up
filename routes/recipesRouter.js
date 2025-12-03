@@ -96,10 +96,6 @@ recipeRouter.get('/', async (req, res, next) => {
     )
 })
 
-
-//MOVE OR COPY THIS TO THE NEXT GET REQUEST
-// IF 404 HIDE THE BOXES AND ADD BOX WITH 'RECIPE DOES NOT EXIST CHECK OUT OTHERS...
-
 recipeRouter.get('/:id', async(req, res) => {
     const recipe = await getRecipeById(req.params.id) 
 
@@ -114,25 +110,6 @@ recipeRouter.get('/:id', async(req, res) => {
         data: recipe
     })
 })
-
-
-//THE FOLLOWING WORKS:
-
-// recipeRouter.get('/:id', async(req, res) => {
-//     const recipe = await getRecipeById(req.params.id) 
-
-//     if (!recipe) {
-//         return res.status(404).json({
-//             data: 'Recipe does not exist with that id'
-//         })
-//     }
-
-//     res.status(200).json({
-//         data: recipe
-//     })
-// })
-
-
 
 recipeRouter.post('/', async (req, res) => {
     try {

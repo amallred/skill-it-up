@@ -70,12 +70,12 @@ ul, ol {
 @font-face {
     font-display: swap;
     font-family: "Candal";
-    src: url("./fonts/Candal/Candal-Regular.ttf"); 
+    src: url("../fonts/Candal/Candal-Regular.ttf"); 
 }
 @font-face {
     font-display: swap;
     font-family: "Rubik";
-    src: url("./fonts/Rubik/Rubik-VariableFont_wght.ttf"); 
+    src: url("../fonts/Rubik/Rubik-VariableFont_wght.ttf"); 
 }
 
 /*  ==================
