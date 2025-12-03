@@ -77,24 +77,25 @@ recipeRouter.get('/', async (req, res) => {
     })
 })
 
-recipeRouter.get('/', async (req, res, next) => {
-    const recipes = await getAllRecipes(
-        req.params.id,
-        (data) => {
-            if (data) {
-                res.status(200).json({
-                    data: recipes
-                })
-            } else {
-                res.status(404).json({ 
-                    status: 404,
-                    statusText: "Not Found"
-                })
-                console.error(error)
-            }
-        }
-    )
-})
+// || IS THIS UNNECESSARY?? ||
+// recipeRouter.get('/', async (req, res, next) => {
+//     const recipes = await getAllRecipes(
+//         req.params.id,
+//         (data) => {
+//             if (data) {
+//                 res.status(200).json({
+//                     data: recipes
+//                 })
+//             } else {
+//                 res.status(404).json({ 
+//                     status: 404,
+//                     statusText: "Not Found"
+//                 })
+//                 console.error(error)
+//             }
+//         }
+//     )
+// })
 
 recipeRouter.get('/:id', async(req, res) => {
     const recipe = await getRecipeById(req.params.id) 
