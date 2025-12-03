@@ -101,7 +101,6 @@ recipeRouter.get('/:id', async(req, res) => {
     const recipe = await getRecipeById(req.params.id) 
 
     if (!recipe) {
-        console.error(res.error)
         return res.status(404).json({
             data: 'Recipe does not exist with that id'
         })

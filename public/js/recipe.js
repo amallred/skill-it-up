@@ -23,10 +23,12 @@ async function displayRecipe(id) {
         const recipeCard = document.getElementById("recipeCard")
         const tipsCard = document.getElementById("tipsCard")
         const errorMsg = document.getElementById("error")
+        const mainContainer = document.getElementById("main")
 
         recipeCard.style.display = "none"
         tipsCard.style.display = "none"
-        error.style.display = "block"
+        errorMsg.style.display = "block"
+        mainContainer.style.gridTemplateColumns = "100%"
 
         return
     }
