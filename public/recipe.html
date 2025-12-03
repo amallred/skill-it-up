@@ -18,8 +18,12 @@
     <div class="content">
 
     <main class="main container recipe-container">
+        <article class="tile" id="error">
+            <h2 class="header">Recipe does not exist with that id</h2>
+            <p>Please visit the <a href="recipes.html">reipces page</a> to explore the available recipes</p>
+        </article>
         
-        <article class="recipe-card">
+        <article class="recipe-card" id="recipeCard">
             <h2 class="header" id="recipe-name">Recipe Name</h2>
             <p id="description">...</p> <!--figure out styling for this-->
             <div class="recipe-tiles">
@@ -56,12 +60,11 @@
                         <!-- <li>Here are some notes</li>-->
                     </ul>
                 </section>
-            </div>                        
-            </section>
+            </div>
         </article>
     </main>
 
-    <aside class="container tips">
+    <aside class="container tips" id="tipsCard">
         <h2 class="header light-text">Tips & Tricks</h2>
         <div class="tip-tiles">
             <section class="tile">

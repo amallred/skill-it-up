@@ -62,5 +62,13 @@
     "ingredients": "4 c chicken broth\n1/2 t garlic powder\n1 t ginger powder\n3 eggs\n2 T corn starch",
     "steps": "Heat broth to boiling after adding cornstarch and seasonings\nwhen boiling, stir in whisked eggs\nenjoy!",
     "notes": "Can be served with green onions"
+  },
+  {
+    "id": 9,
+    "name": "PB&J",
+    "description": "a sandwich",
+    "ingredients": "bread\npb\njelly",
+    "steps": "make sandwich\neat it",
+    "notes": ""
   }
 ]

@@ -77,40 +77,34 @@ recipeRouter.get('/', async (req, res) => {
     })
 })
 
-// recipeRouter.get('/', async (req, res, next) => {
-//     const recipes = await getAllRecipes(
-//         req.params.id,
-//         (data) => {
-//             if (data) {
-//                 res.status(200).json({
-//                     data: recipes
-//                 })
-//             } else {
-//                 res.status(404).json({
-//                     status: 404,
-//                     statusText: "Not Found",
-//                     message: `Recipe with id of ${req.params.id} not found`,
-//                 })
-//                 console.error(error)
-//             }
-//         }
-//         // ,
-//         // (err) => {
-//         //     next(err)
-//         // }
-//         // I'm not sure what the above does
-        
-//         // REFERENCE: highest-of-the-hi/routes/games.js lines 40-64?
-//     )
+recipeRouter.get('/', async (req, res, next) => {
+    const recipes = await getAllRecipes(
+        req.params.id,
+        (data) => {
+            if (data) {
+                res.status(200).json({
+                    data: recipes
+                })
+            } else {
+                res.status(404).json({ 
+                    status: 404,
+                    statusText: "Not Found"
+                })
+                console.error(error)
+            }
+        }
+    )
+})
 
 
-
-// })
+//MOVE OR COPY THIS TO THE NEXT GET REQUEST
+// IF 404 HIDE THE BOXES AND ADD BOX WITH 'RECIPE DOES NOT EXIST CHECK OUT OTHERS...
 
 recipeRouter.get('/:id', async(req, res) => {
-    const recipe = await getRecipeById(req.params.id)
+    const recipe = await getRecipeById(req.params.id) 
 
     if (!recipe) {
+        console.error(res.error)
         return res.status(404).json({
             data: 'Recipe does not exist with that id'
         })
@@ -120,6 +114,23 @@ recipeRouter.get('/:id', async(req, res) => {
         data: recipe
     })
 })
+
+
+//THE FOLLOWING WORKS:
+
+// recipeRouter.get('/:id', async(req, res) => {
+//     const recipe = await getRecipeById(req.params.id) 
+
+//     if (!recipe) {
+//         return res.status(404).json({
+//             data: 'Recipe does not exist with that id'
+//         })
+//     }
+
+//     res.status(200).json({
+//         data: recipe
+//     })
+// })
 
 
 

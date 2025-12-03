@@ -19,7 +19,6 @@ cd skill-it-up
 3. Install dependencies
 ```bash
 npm install
-npm i cors
 ```
 4. Start the server
 ```bash

@@ -17,6 +17,21 @@ async function getRecipe(id) {
 async function displayRecipe(id) { 
     const recipe = await getRecipe(id)
     
+        // || ERROR CHECK ||
+
+    if (!recipe.id || !recipe) {
+        console.log('test')
+        const recipeCard = document.getElementById("recipeCard")
+        const tipsCard = document.getElementById("tipsCard")
+        const errorMsg = document.getElementById("error")
+
+        recipeCard.style.display = "none"
+        tipsCard.style.display = "none"
+        error.style.display = "block"
+
+        return
+    }
+
     // || DISPLAY RECIPE NAME ||
     const recipeName = document.getElementById("recipe-name")
     const name = recipe.name
@@ -85,6 +100,8 @@ directionList.addEventListener("click", function(e){
         e.target.classList.toggle("checked")
         // saveDirectionData()
     } 
+
+
 })
 
 ingredientsList.addEventListener("click", function(e){
@@ -103,6 +120,20 @@ ingredientsList.addEventListener("click", function(e){
 
 // function saveIngredientData() {
 //     localStorage.setItem("data", ingredientsList.innerHTML)
+// }
+
+
+
+// async function errorCheck (recipeId){
+//     const recipeName = document.getElementById("recipe-name")
+//     const recipeName = document.getElementById("recipe-name")
+//     if (recipeName === '' && ) {
+//         const recipeCard = document.getElementById("recipeCard")
+//         const tipsCard = document.getElementById("tipsCard")
+
+//         recipeCard.style.display = "none"
+//         tipsCard.style.display = "none"
+//     }
 // }
 
 getRecipe(recipeId)

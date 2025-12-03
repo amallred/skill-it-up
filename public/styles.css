@@ -141,6 +141,17 @@ body {
     width: auto;
 }
 
+/* || RECIPE ERROR || */
+#error {
+    display: none;
+    align-content: center;
+}
+
+#error a {
+    text-decoration: underline;
+    color: var(--green)
+}
+
 /* || MOBILE HAMBURGER MENU || */
 
 .navigation {
@@ -164,9 +175,10 @@ body {
 }
 
 .top-header a {
-    float: center;
+    /* float: center; */
     padding: var(--PADDING-TEXT);
 } 
+
 /* .top-header li {
     display: inline-block;
     padding: var(--PADDING-TEXT);
@@ -279,16 +291,14 @@ body {
 
 /* || CHECKLIST RECIPE STEPS || */
 
-#directions li, #ingredients li 
-{
+#directions li, #ingredients li {
     list-style: none;
     cursor: pointer;
     position: relative;
     margin: 1rem .5rem;
 }
 
-#directions li::before, #ingredients li::before
- {
+#directions li::before, #ingredients li::before {
     content: '';
     position: absolute;
     height: 1.5rem;
@@ -300,14 +310,12 @@ body {
     left: -2rem;
 }
 
-#directions li.checked, #ingredients li.checked
- {
+#directions li.checked, #ingredients li.checked {
     color: var(--green);
     text-decoration: line-through;
 }
 
-#directions li.checked::before, #ingredients li.checked::before
- {
+#directions li.checked::before, #ingredients li.checked::before {
     background-color: var(--green);
 }
 

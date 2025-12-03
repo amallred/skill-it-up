@@ -69,25 +69,25 @@ function addHeader() {
     `
 //ADDING UL TO NAV
     // header.innerHTML =`
-    //     <div class="logo-title">
-    //     <figure>
-    //     <a href="index.html"><img class="logo"src="./images/skillItUpLogo.png"></a>
-    //     </figure>
-    //     <h1 class="title header"> Skill It Up! </h1>
-    //     </div>
-    //     <nav class="navigation">
-    //         <ul>
-    //             <li><a href="index.html" class="header light-text nav-btn">Kitchen</a></li>
-    //             <li><a href="recipes.html" class="header light-text nav-btn">Recipes</a></li>
-    //             <li><a href="tips.html" class="header light-text nav-btn">Tips & Tricks</a></li>
-    //             <li><a href="share.html" class="header light-text nav-btn">Share a Recipe</a></li>
-    //             <!-- <a href="" class="header light-text nav-btn">My Cookbook</a> -->
-    //         </ul>
-    //     </nav>
-    //     <!-- hamburger menu  -->
-    //         <a href="javascript:void(0);" class="hamburger" onclick ="hamburger()">
-    //         <img id="hamburger" src="./images/hamburger.svg.png">
-    //         </a>
+        // <div class="logo-title">
+        // <figure>
+        // <a href="index.html"><img class="logo"src="./images/skillItUpLogo.png"></a>
+        // </figure>
+        // <h1 class="title header"> Skill It Up! </h1>
+        // </div>
+        // <nav class="navigation">
+        //     <ul>
+        //         <li><a href="index.html" class="header light-text nav-btn">Kitchen</a></li>
+        //         <li><a href="recipes.html" class="header light-text nav-btn">Recipes</a></li>
+        //         <li><a href="tips.html" class="header light-text nav-btn">Tips & Tricks</a></li>
+        //         <li><a href="share.html" class="header light-text nav-btn">Share a Recipe</a></li>
+        //         <!-- <a href="" class="header light-text nav-btn">My Cookbook</a> -->
+        //     </ul>
+        // </nav>
+        // <!-- hamburger menu  -->
+        //     <a href="javascript:void(0);" class="hamburger" onclick ="hamburger()">
+        //     <img id="hamburger" src="./images/hamburger.svg.png">
+        //     </a>
     // `
 }
 
