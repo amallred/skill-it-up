@@ -20,7 +20,6 @@ async function displayRecipe(id) {
         // || ERROR CHECK ||
 
     if (!recipe.id || !recipe) {
-        console.log('test')
         const recipeCard = document.getElementById("recipeCard")
         const tipsCard = document.getElementById("tipsCard")
         const errorMsg = document.getElementById("error")
