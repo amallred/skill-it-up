@@ -17,7 +17,7 @@ async function getRecipe(id) {
 async function displayRecipe(id) { 
     const recipe = await getRecipe(id)
     
-        // || ERROR CHECK ||
+    // || ERROR CHECK ||
 
     if (!recipe.id || !recipe) {
         const recipeCard = document.getElementById("recipeCard")

@@ -26,7 +26,7 @@ async function getAllTips() {
 }
 
 tipsRouter.get('/', async (req, res) => {
-    const recipes = await getAllRecipes()
+    const recipes = await getAllTips()
     res.status(200).json({
         data: recipes
     })

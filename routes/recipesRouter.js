@@ -71,31 +71,17 @@ async function createRecipe(reqBody) {
 
 
 recipeRouter.get('/', async (req, res) => {
-    const recipes = await getAllRecipes()
-    res.status(200).json({
-        data: recipes
-    })
-})
+    
+    try {
+        const recipes = await getAllRecipes()
+        res.status(200).json({
+            data: recipes
+        })
+    } catch (error) {
+        console.error('error', error.message)
+    }
 
-// || IS THIS UNNECESSARY?? ||
-// recipeRouter.get('/', async (req, res, next) => {
-//     const recipes = await getAllRecipes(
-//         req.params.id,
-//         (data) => {
-//             if (data) {
-//                 res.status(200).json({
-//                     data: recipes
-//                 })
-//             } else {
-//                 res.status(404).json({ 
-//                     status: 404,
-//                     statusText: "Not Found"
-//                 })
-//                 console.error(error)
-//             }
-//         }
-//     )
-// })
+})
 
 recipeRouter.get('/:id', async(req, res) => {
     const recipe = await getRecipeById(req.params.id) 
@@ -126,7 +112,8 @@ recipeRouter.post('/', async (req, res) => {
                 data: 'Bad Request. Missing required information'
         })
     }
-    console.log(req.body) // testing form
+    // testing form
+    // console.log(req.body) 
     res.status(201).json({
         data: newRecipe
     })
@@ -135,6 +122,5 @@ recipeRouter.post('/', async (req, res) => {
         console.error('error', error.message)        
     }
 }) 
-
 
 export default recipeRouter
