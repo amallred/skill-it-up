@@ -192,6 +192,8 @@ body {
     display: grid;
     justify-items: center;
     grid-area: content;
+    gap: 1rem;
+    margin: var(--MARGIN);
 }
 
 /* basic layout for all colored-background containers */
@@ -200,7 +202,7 @@ body {
     padding: var(--PADDING-TEXT);
     box-shadow: var(--BOX-SHADOW);
     margin: var(--MARGIN);
-    width: 75dvw;
+    width: 66dvw;
 }
 
 /* basic layout for all light bg containers */
@@ -378,7 +380,7 @@ form >p {
 @media only screen and (min-width: 768px){
     :root {
         /* STANDARD MARGIN */
-        --MARGIN: .25rem;
+        --MARGIN: .5rem;
     }    
     /* .content {
     }     */
@@ -396,15 +398,19 @@ form >p {
         align-self: center;
     }
     .tip-tiles {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        /* display: flex;
         flex-direction: row;
         justify-items: stretch;
+        flex-grow: 0; */
     }
     .container {
-        min-width: 75dvw;
+        min-width: 66dvw;
     }
     .recipe-container, .tips {
-        max-width: 75dvw;
+        max-width: 66dvw;
     }
     .recipe-tiles {
         display: grid;
