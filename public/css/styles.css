@@ -156,7 +156,7 @@ body {
 
 .navigation {
     display: none;
-    padding: 1rem 2rem 1rem 0;
+    padding: 1rem 1rem 1rem 0;
 }
 
 .hamburger {
@@ -172,17 +172,21 @@ body {
     width: 2rem;
     height: auto;
     display: block;
+    margin: 1rem;
 }
 
 .top-header a {
-    /* float: center; */
     padding: var(--PADDING-TEXT);
 } 
 
-/* .top-header li {
+#nav-list {
+    align-self: end;
+}
+#nav-list li {
     display: inline-block;
     padding: var(--PADDING-TEXT);
-}  */
+    padding: 0 1rem;
+} 
 
 
 /* || UNIVERSAL CONTENT TEMPLATES || */

@@ -48,47 +48,48 @@ function addHeader() {
 // Restructure this to NOT use innerHTML (in progress above)
 
 //WORKING NAV
+    // header.innerHTML =`
+    //     <div class="logo-title">
+    //     <figure>
+    //     <a href="index.html"><img class="logo"src="./images/skillItUpLogo.png"></a>
+    //     </figure>
+    //     <h1 class="title header light-text"><a href="index.html"> Skill It Up!</a></h1>
+    //     </div>
+    //     <nav class="navigation">
+    //             <a href="index.html" class="header light-text nav-btn">Kitchen</a>
+    //             <a href="recipes.html" class="header light-text nav-btn">Recipes</a>
+    //             <a href="tips.html" class="header light-text nav-btn">Tips & Tricks</a>
+    //             <a href="share.html" class="header light-text nav-btn">Share a Recipe</a>
+    //             <!-- <a href="" class="header light-text nav-btn">My Cookbook</a> -->
+    //     </nav>
+    //     <!-- hamburger menu  -->
+    //         <a href="javascript:void(0);" class="hamburger" onclick ="hamburger()">
+    //         <img id="hamburger" src="./images/hamburger.svg.png">
+    //         </a>
+    // `
+
+//ADDING UL TO NAV
     header.innerHTML =`
         <div class="logo-title">
         <figure>
         <a href="index.html"><img class="logo"src="./images/skillItUpLogo.png"></a>
         </figure>
-        <h1 class="title header light-text"> Skill It Up! </h1>
+        <h1 class="title header light-text"><a href="index.html"> Skill It Up!</a></h1>
         </div>
         <nav class="navigation">
-                <a href="index.html" class="header light-text nav-btn">Kitchen</a>
-                <a href="recipes.html" class="header light-text nav-btn">Recipes</a>
-                <a href="tips.html" class="header light-text nav-btn">Tips & Tricks</a>
-                <a href="share.html" class="header light-text nav-btn">Share a Recipe</a>
+            <ul id="nav-list">
+                <li><a href="index.html" class="header light-text nav-btn">Kitchen</a></li>
+                <li><a href="recipes.html" class="header light-text nav-btn">Recipes</a></li>
+                <li><a href="tips.html" class="header light-text nav-btn">Tips & Tricks</a></li>
+                <li><a href="share.html" class="header light-text nav-btn">Share a Recipe</a></li>
                 <!-- <a href="" class="header light-text nav-btn">My Cookbook</a> -->
+            </ul>
         </nav>
         <!-- hamburger menu  -->
             <a href="javascript:void(0);" class="hamburger" onclick ="hamburger()">
             <img id="hamburger" src="./images/hamburger.svg.png">
             </a>
     `
-//ADDING UL TO NAV
-    // header.innerHTML =`
-        // <div class="logo-title">
-        // <figure>
-        // <a href="index.html"><img class="logo"src="./images/skillItUpLogo.png"></a>
-        // </figure>
-        // <h1 class="title header"> Skill It Up! </h1>
-        // </div>
-        // <nav class="navigation">
-        //     <ul>
-        //         <li><a href="index.html" class="header light-text nav-btn">Kitchen</a></li>
-        //         <li><a href="recipes.html" class="header light-text nav-btn">Recipes</a></li>
-        //         <li><a href="tips.html" class="header light-text nav-btn">Tips & Tricks</a></li>
-        //         <li><a href="share.html" class="header light-text nav-btn">Share a Recipe</a></li>
-        //         <!-- <a href="" class="header light-text nav-btn">My Cookbook</a> -->
-        //     </ul>
-        // </nav>
-        // <!-- hamburger menu  -->
-        //     <a href="javascript:void(0);" class="hamburger" onclick ="hamburger()">
-        //     <img id="hamburger" src="./images/hamburger.svg.png">
-        //     </a>
-    // `
 }
 
 function addFooter() {
