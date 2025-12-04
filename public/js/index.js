@@ -9,6 +9,17 @@ async function getRecipes() {
     }
 }
 
+async function getTips() {
+    try {
+        const res = await fetch("http://localhost:2025/api/tips")
+        const parsedData = await res.json()
+        // console.log(parsedData)
+        return parsedData.data
+    } catch (error) {
+        console.error(error.message)
+    }
+}
+
 async function createRecipePreviews(recipeName) { 
 
     const recipeContainer = document.getElementById("recipeContainer")
@@ -33,7 +44,7 @@ async function createRecipePreviews(recipeName) {
     recipeDescription.textContent = recipeName.description 
     recipeHeader.textContent = recipeName.name
     
-    // recipeButton.appendChild()
+    // Construct card
     recipeButton.appendChild(recipeLink)
     article.appendChild(recipeHeader)
     article.appendChild(recipeDescription)
@@ -41,9 +52,9 @@ async function createRecipePreviews(recipeName) {
     recipeContainer.appendChild(article)
 }
 
-async function renderCards() {
+async function renderRecipeCards() {
     try {
-        // Retrieve games
+        // Retrieve recipes
         const recipes = await getRecipes()
 
         // Create a set to store 3 random unique recipes
@@ -63,4 +74,53 @@ async function renderCards() {
     }
 }
 
-renderCards()
+// Random tip generation
+
+async function createTipTile(tip) {
+    // Container
+    const tipContainer = document.getElementById("tip-container")
+    
+    // Create elements
+    const tipTile = document.createElement("section")
+    const tipText = document.createElement("p")
+    const tipAuthor = document.createElement("p")
+    
+    // Add classes
+    tipTile.classList.add("tile")
+    tipText.classList.add("text")
+    tipAuthor.classList.add("text")
+
+    // Populate content
+    tipText.textContent = tip.tip
+    tipAuthor.textContent = `Shared by: ${tip.name}`
+
+    // Construct tile
+    tipContainer.appendChild(tipTile)
+    tipTile.appendChild(tipText)
+    tipTile.appendChild(tipAuthor)
+}
+
+async function renderTipCards() {
+    try {
+        // Retrieve tips
+        const tips = await getTips()
+
+        // Create a set to store 4 random unique tips
+        const randomTips = new Set()
+        while (randomTips.size < 4) {
+            randomTips.add(tips[Math.floor(Math.random() * tips.length)])
+        }
+
+        // Store random tips into an array
+        const featuredTips = Array.from(randomTips)
+
+        featuredTips.forEach(tip => {
+            createTipTile(tip)
+        })
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+renderRecipeCards()
+renderTipCards()
