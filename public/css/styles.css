@@ -278,7 +278,7 @@ body {
 
 .recipe-card {
     text-align: center;
-    width: 75dvw;
+    width: 66dvw;
     box-sizing: content-box;
 }
 
@@ -400,11 +400,7 @@ form >p {
     .tip-tiles {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-
-        /* display: flex;
-        flex-direction: row;
-        justify-items: stretch;
-        flex-grow: 0; */
+        gap: 2rem;
     }
     .container {
         min-width: 66dvw;
