@@ -37,9 +37,9 @@ ul, ol {
     --black: rgb(20, 10, 31);
     --background: rgba(226, 233, 195, 0.45);
     --light: rgb(226, 233, 195); 
-    --green: rgb(92, 123, 20);
+    --green: rgb(61, 81, 6);
     --orange: rgb(238, 136, 47);
-    --red: rgb(193, 51, 61);
+    --red: #8A1538;
     --white: rgb(255, 255, 255);
 
     /* BORDERS */

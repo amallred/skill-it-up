@@ -96,7 +96,7 @@ function addFooter() {
     const footer = document.querySelector(".footer")
 
     footer.innerHTML=`
-        <p class="footer-text">Created by Amanda Allred</p>
+        <p class="footer-text light-text">Created by Amanda Allred</p>
 `
 }
 
