@@ -31,6 +31,9 @@ http://localhost:2025
 
 ---
 ## CAPSTONE FEATURES
+
+ADD HOW YOU IMPLEMENTED THESE!
+
 - Create a node.js web server using Express.js.
 - Create an API that implements HTTP requests for GET and POST. Data can be stored in a JSON file on the back-end
 - Analyze data that is stored in arrays, objects, sets or maps and display information about it in your app. 

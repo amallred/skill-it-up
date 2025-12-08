@@ -42,4 +42,4 @@ async function renderCards() {
 }
 
 // getTips()
-renderCards()
+await renderCards()
