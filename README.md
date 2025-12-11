@@ -1,13 +1,16 @@
 # Skill It Up
-Overview:
+### Overview:
 
 A Code:You capstone project building a custom API while applying HTML, CSS, and JavaScript skills.
 
-Project Overview:
+### Project Overview:
 
-Many cooking applications assume their users possess a certain level of cooking acumen and lack opportunities to personally track the cooking process. This project addresses organization of the cooking process, from ingredient gathering to serving, as well as offers opportunities to learn skills and cooking terms through execution of the recipe. This application also allows users to share recipes. 
+Many cooking applications assume their users possess a certain level of cooking acumen and lack opportunities to personally track the cooking process. This project addresses organization of the cooking process, as well as offers opportunities to learn skills and cooking terms through execution of the recipe. This application also allows users to share recipes to the website. 
 
 ## How to Download
+
+<!-- ADD NODE INSTALL OR VERSION CHECK -->
+
 1. Clone the repository using GIT
 ```bash
 git clone https://github.com/amallred/skill-it-up.git
@@ -29,32 +32,18 @@ npm run dev
 http://localhost:2025
 ```
 
----
 ## CAPSTONE FEATURES
 
-ADD HOW YOU IMPLEMENTED THESE!
+<!-- ADD HOW YOU IMPLEMENTED THESE! -->
 
 - Create a node.js web server using Express.js.
 - Create an API that implements HTTP requests for GET and POST. Data can be stored in a JSON file on the back-end
 - Analyze data that is stored in arrays, objects, sets or maps and display information about it in your app. 
 
----
+<!-- ADD DEPENDENCIES USED -->
+
 ## ACKNOWLEDGEMENTS
 
-Thank you to Dan Collins for his guidance and support through this project.
-
-[List tutorial](https://www.youtube.com/watch?v=G0jO8kUrg-I&ab_channel=GreatStack)
-[Form confirmation message](https://www.tutorialpedia.org/blog/confirmation-on-form-submit-html-css/)
----
-### TO DO:
-- [x] Focus on proper semantic HTML
-- [x] Application of variables for consistent formatting (imported fonts, colors, box shadow, etc.)
-- [ ] Intentional layout of CSS styling
-- [x] [Hamburger menu](https://www.w3schools.com/howto/howto_js_mobile_navbar.asp)
-- [ ] add hover & click interactions with buttons
-- [ ] look up how to automatically make columns based on list length for ingredients
-- [x] Link headers and footers across the site
-- [x] Make a logo
-  - [x] using an svg is proving very difficult; I re-saved as png for now
-- [ ] Fix Tips & Tricks box css
-- [ ] Add name of website to larger screens in addition to logo
+- Thank you to Dan Collins for his guidance and support through this project.
+- [List tutorial](https://www.youtube.com/watch?v=G0jO8kUrg-I&ab_channel=GreatStack)
+- [Form confirmation message](https://www.tutorialpedia.org/blog/confirmation-on-form-submit-html-css/)
