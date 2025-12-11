@@ -42,6 +42,9 @@ http://localhost:2025
 
 <!-- ADD DEPENDENCIES USED -->
 
+## THINGS TO IMPROVE
+- Make the random tip generation code modular to use across files
+
 ## ACKNOWLEDGEMENTS
 
 - Thank you to Dan Collins for his guidance and support through this project.

@@ -207,10 +207,11 @@ body {
 /* basic layout for all colored-background containers */
 .container {  
     display: grid;
+    justify-content: center;
     padding: var(--PADDING-TEXT);
     box-shadow: var(--BOX-SHADOW);
     margin: var(--MARGIN);
-    width: 66dvw;
+    width: 75dvw;
 }
 
 /* basic layout for all light bg containers */
@@ -383,6 +384,24 @@ form >p {
     text-decoration: underline;
 }
 
+/* || TABLE FORMATTING || */
+
+.table, th, td {
+    border: 1px solid var(--black);
+    border-collapse: collapse;
+    padding: .25rem;
+}
+
+.table {
+    table-layout: fixed;
+    width: 100%;
+    font-size: .75rem;
+}
+
+.measurements-container {
+    margin: 0;
+}
+
 /* || LARGER SCREENS (tablets and larger) || */
 
 @media only screen and (min-width: 768px){
@@ -411,7 +430,7 @@ form >p {
         gap: 2rem;
     }
     .container {
-        min-width: 66dvw;
+        width: 66dvw;
     }
     .recipe-container, .tips {
         max-width: 66dvw;
