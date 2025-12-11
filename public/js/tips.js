@@ -49,18 +49,14 @@ const filterTips = (e) => {
     const searchTerm = e.target.value.trim().toLowerCase()
     const tipList = document.getElementById("tip-tiles")
     let tips = Array.from(tipList.children)
-
-    console.log(searchTerm)
     
     tips.forEach((tip)=> {
         if (!tip.innerText.toLowerCase().includes(searchTerm)) {
-            tip.classList.toggle("hidden")
+            tip.style.display = "none"
         } else {
-            tip.classList.remove("hidden")
+            tip.style.display = "block"
         }
     })
-    
-    console.log(tips)
 }
 
 tipFilter.addEventListener("input", filterTips)
