@@ -1,8 +1,10 @@
+const tipFilter = document.getElementById("tip-filter")
+
 async function getTips() {
     try {
         const res = await fetch("http://localhost:2025/api/tips")
         const parsedData = await res.json()
-        console.log(parsedData)
+        // console.log(parsedData)
         return parsedData.data
     } catch (error) {
         console.error(error.message)
@@ -41,5 +43,26 @@ async function renderCards() {
     }
 }
 
-// getTips()
+// Tip search bar
+
+const filterTips = (e) => {
+    const searchTerm = e.target.value.trim().toLowerCase()
+    const tipList = document.getElementById("tip-tiles")
+    let tips = Array.from(tipList.children)
+
+    console.log(searchTerm)
+    
+    tips.forEach((tip)=> {
+        if (!tip.innerText.toLowerCase().includes(searchTerm)) {
+            tip.classList.toggle("hidden")
+        } else {
+            tip.classList.remove("hidden")
+        }
+    })
+    
+    console.log(tips)
+}
+
+tipFilter.addEventListener("input", filterTips)
+
 await renderCards()

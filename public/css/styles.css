@@ -383,6 +383,12 @@ form >p {
     text-decoration: underline;
 }
 
+ /* || HIDDEN TIPS || */
+
+.hidden {
+    display: none;
+}
+
 /* || LARGER SCREENS (tablets and larger) || */
 
 @media only screen and (min-width: 768px){
