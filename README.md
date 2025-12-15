@@ -44,6 +44,10 @@ http://localhost:2025
 ## REFLECTIONS: THINGS I WOULD DO DIFFERENTLY NEXT TIME
 - Use the BEM naming convention for more navigable css classes
 - Make the random tip generation code modular to use across files
+<!-- 
+## NEXT GOALS IN THIS PROJECT
+- Easily add ingredients to a personal shopping list/pantry list for meal planning.
+- Add tooltips to explain measurement abbreviations.  -->
 
 ## ACKNOWLEDGEMENTS
 

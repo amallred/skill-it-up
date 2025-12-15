@@ -105,9 +105,9 @@ async function renderTipCards() {
         // Retrieve tips
         const tips = await getTips()
 
-        // Create a set to store 4 random unique tips
+        // Create a set to store 2 random unique tips
         const randomTips = new Set()
-        while (randomTips.size < 4) {
+        while (randomTips.size < 2) {
             randomTips.add(tips[Math.floor(Math.random() * tips.length)])
         }
 

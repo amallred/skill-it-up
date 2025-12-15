@@ -62,5 +62,61 @@
     "ingredients": "4 c chicken broth\n1/2 t garlic powder\n1 t ginger powder\n3 eggs\n2 T corn starch",
     "steps": "Heat broth to boiling after adding cornstarch and seasonings\nwhen boiling, stir in whisked eggs\nenjoy!",
     "notes": "Can be served with green onions"
+  },
+  {
+    "id": 9,
+    "name": "Beer Bread",
+    "description": "A no-knead recipe for a quick, crusty loaf of bread.",
+    "ingredients": "3 c sifted flour\n3 t baking powder\n1 t salt\n1/4 c sugar\n12 oz beer\n1/4 c melted butter",
+    "steps": "Preheat oven to 375 F.\nMix all ingredients in a bowl EXCEPT the butter.\nPour the mixture into a greased loaf pan.\nPour the melted butter over the mixture.\nBake 1 hour.\nRemove from pan and cool at least 15 min before removing from the pan.",
+    "notes": "Try this recipe with different types of beer to see how it changes the flavor!"
+  },
+  {
+    "id": 10,
+    "name": "Red Wine Pork Tenderloin",
+    "description": "A mix, wait, and enjoy slow-cooker meal that will impress your mother-in-law.",
+    "ingredients": "~1 1/4 lb pork tenderloin\n1 c water\n1 c red wine\n1 T Worcestershire sauce\n1 T garlic (minced; ~3 cloves)\n2 T dried minced onion\n2 t cornstarch\n1/2 t onion powder (or minced)\n1/2 t garlic powder\n1/2 t salt\n1/2 t sugar\n1/4 t paprika\n1/4 t pepper\nOPT: dash turmeric\nOPT: dash nutmeg ",
+    "steps": "Place the pork in a slow-cooker.\nAdd water, wine, and Worcestershire sauce.\nTop with the minced garlic.\nCombine the remaining ingredients in a bowl then sprinkle on top of the pork.\nCook on low 4-5 hours (flip after 3) or on high for 2-3 hours. (Internal temperature should be 145 F for safe consumption.)",
+    "notes": "If you increase the amount of pork, you don't necessarily need to double or triple the ingredients. Start with the basic recipe amounts and then increase as needed. (Wine should not completely cover the pork and the toppings should just cover the surface of the pork.)\nTo turn the remaining liquid into a gravy, off heat, remove about 1/4 c, add 1-2 T cornstarch to that to make a slurry, then stir it back in. After it's fully incorporated, warm the gravy, stirring frequently until it reaches your desired consistency. "
+  },
+  {
+    "id": 11,
+    "name": "Quick and Easy Alfredo Sauce",
+    "description": "It's easier than you think to make homemade alfredo sauce!",
+    "ingredients": "1/4 c butter\n1 c heavy cream\n1 clove garlic, crushed\n1 1/2 parmesan (freshly grated)\nOPT 1/4 c parsley (fresh, chopped)",
+    "steps": "Melt the butter over medium-low heat.\nAdd the cream, bring to a simmer and continue simmering for 5 minutes. (Do not let it come to a boil.)\nAdd the garlic and cheese, whisking quickly and heating until the cheese melts.\nStir in the parsley if using.\nServe over freshly cooked pasta.",
+    "notes": ""
+  },
+  {
+    "id": 12,
+    "name": "Austin's Mamaw's Fudge",
+    "description": "A treat sure to make your sweet tooth happy.",
+    "ingredients": "5 c sugar\n2 sticks butter\n1 can evaporated milk\n24 large marshmallows\n2 c chocolate chips",
+    "steps": "Combine sugar, butter, and milk in a pan and heat until it boils. (Be sure to stir frequently so it doesn't stick to the bottom or sides of the pan.)\nBoil for 12 minutes, stirring constantly.\nRemove from the heat and mix in the marshmallows and chocolate chips.\nPour into a buttered dish and let cool.\nCut and enjoy!",
+    "notes": ""
+  },
+  {
+    "id": 13,
+    "name": "Nonna's Sour Cream Chicken ",
+    "description": "A creamy and nostalgic chicken dish that goes great with rice.",
+    "ingredients": "6 boneless, skinless chicken breast halves\n1 can (10 oz) cream of mushroom soup\n1 c light sour cream (regular is fine)\n1/3 c cooking white wine\n1 can (4 oz) sliced mushrooms, drained\nsalt and pepper\n2 c cooked rice",
+    "steps": "Preheat the oven to 325 F.\nIn a 3-qt casserole dish, arrange the chicken and sprinkle lightly with salt and pepper. \nIn a small bowl, combine the soup, sour cream, wine, and mushrooms. Mix well.\nPour mixture over the chicken.\nBake uncovered for ~90 min or until cooked through (165 F internal).\nServe over hot cooked rice.",
+    "notes": "Try this recipe with other cuts of chicken; chicken thighs are nice and juicy!\nIf you don't have cooking wine, a dry white wine works well.\nTry substituting freshly sautéed sliced mushrooms for the canned mushrooms to enhance the flavor!"
+  },
+  {
+    "id": 14,
+    "name": "Nana's Porkchop Rice Casserole",
+    "description": "A filling, creamy casserole to feed the whole family.",
+    "ingredients": "1 pack of ~10 thin porkchops; cut into bite-sized pieces)\n1 can each cream of: chicken, celery, mushroom\n3 soup-can-fuls of instant rice\n3 1/2 soup-can-fuls of milk\n1 c melted butter\n",
+    "steps": "Preheat the oven to 350 F.\nPut the porkchops in the bottom of a large roasting pan in an even layer.\nCombine the soups, rice, milk, and butter, then pour the mixture over the meat.\nCover with foil.\nBake 90 min.\nOptional: Serve with extra butter on top.",
+    "notes": "Feel free to add seasonings! Salt, pepper, garlic, Italian seasoning... the sky's the limit!"
+  },
+  {
+    "id": 15,
+    "name": "Renny's Asparagus Casserole",
+    "description": "A family classic at holiday gatherings.",
+    "ingredients": "4-5 boiled eggs, sliced\n2 cans of asparagus (~14.5 oz ea)\n4-6 oz Velveeta cheese, cubed\n2 T cornstarch\nRuffles chips, crushed",
+    "steps": "Drain the liquid from the asparagus into a pot and add the cornstarch. Mix until smooth, then heat until it has thickened.\nSlowly add the cheese until completely smooth, then remove from heat.\nPour the asparagus into a baking dish, then cover with the cheese mixture.\nTop with the sliced eggs then cover with crushed chips.\nBake at 350 F until the cheese is bubbling and the chips are lightly golden-brown.",
+    "notes": "You can prepare this ahead of time and heat when ready."
   }
 ]
