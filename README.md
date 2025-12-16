@@ -38,16 +38,19 @@ http://localhost:2025
 ## CAPSTONE FEATURES
 
 - Create a node.js web server using Express.js.
-- Create an API that implements HTTP requests for GET and POST. Data can be stored in a JSON file on the back-end
+  - Built a custom server by following tutorials provided by both Code:You and the [Express Crash Course](https://www.youtube.com/watch?v=CnH3kAXSrmU) by Traversy Media.
+- Create an API that implements HTTP requests for GET and POST. Data can be stored in a JSON file on the back-end.
+  - Constructed two routes to my custom API, both of which allow the user to GET data from their respective json file and one that also allows the user to POST data to it.
 - Analyze data that is stored in arrays, objects, sets or maps and display information about it in your app. 
+  - I parsed the information stored in my json files and displayed it in a more readable way throughout my application.
 
 ## REFLECTIONS: THINGS I WOULD DO DIFFERENTLY NEXT TIME
 - Use the BEM naming convention for more navigable css classes
 - Make the random tip generation code modular to use across files
-<!-- 
+
 ## NEXT GOALS IN THIS PROJECT
+- Add tooltips to explain measurement abbreviations. 
 - Easily add ingredients to a personal shopping list/pantry list for meal planning.
-- Add tooltips to explain measurement abbreviations.  -->
 
 ## ACKNOWLEDGEMENTS
 
