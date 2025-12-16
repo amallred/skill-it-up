@@ -49,6 +49,7 @@ http://localhost:2025
 - Make the random tip generation code modular to use across files
 
 ## NEXT GOALS IN THIS PROJECT
+- Store ingredient/recipe checklists to local storage.
 - Add tooltips to explain measurement abbreviations. 
 - Easily add ingredients to a personal shopping list/pantry list for meal planning.
 

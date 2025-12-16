@@ -18,18 +18,18 @@ function createTipCard(tip) {
     const tipAuthor = document.createElement("p")
 
     // Add classes
-    tipTile.classList.add("tile")
-    tipText.classList.add("text")
-    tipAuthor.classList.add("text")
+        tipTile.classList.add("tile")
+        tipText.classList.add("text")
+        tipAuthor.classList.add("text")
 
     //Populate content
-    tipText.textContent = tip.tip
-    tipAuthor.textContent = `Shared by: ${tip.name}`
+        tipText.textContent = tip.tip
+        tipAuthor.textContent = `Shared by: ${tip.name}`
 
     // Construct tile
-    tipContainer.appendChild(tipTile) // Add tile to parent
-    tipTile.appendChild(tipText) // Tip added to tile
-    tipTile.appendChild(tipAuthor) // Author added to tile
+        tipContainer.appendChild(tipTile) // Add tile to parent
+        tipTile.appendChild(tipText) // Tip added to tile
+        tipTile.appendChild(tipAuthor) // Author added to tile
 }
 
 async function renderCards() {

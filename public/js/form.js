@@ -29,8 +29,6 @@ form.addEventListener("submit", async e => {
         console.error(error.message)
     }
 
-    // confirm("Thank you for sharing a recipe! Visit the <a href="recipes.html">recipes page</a> to see your entry!")
-
     confirmation.style.display = "block"
     
     form.reset()

@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./css/styles.css">
 
     <title>Skill It Up! | Share</title>
-    <!-- Make and insert a favicon -->
 </head>
 <body>
     
@@ -21,8 +20,7 @@
         
         <article class="recipe-card">
             <h2 class="header">Share a recipe!</h2>
-            <p class="share-instructions">Thank you for contributing to our cookbook! To help with formatting, please press enter after each ingredient, cooking direction, or note. See our Tips & Tricks page for notes on measurement abbreviations.</p>
-            <!-- Link to tips & tricks page above -->
+            <p class="share-instructions">Thank you for contributing to our cookbook! To help with formatting, please press enter after each ingredient, cooking direction, or note. See our <a href="tips.html">Tips & Tricks</a> page for notes on measurement abbreviations.</p>
             <div class="share-form">
                 <form method="POST" action="/api/recipes">
                     <label class="header">Recipe Name*</label>
@@ -37,7 +35,6 @@
                         spellcheck="on"
                         required
                     />
-                    <!-- do i need to add the wrap attribute? -->
                     <label class="header">Recipe Description (Tasty teaser!)*</label>
                     <p>One-sentence description of your recipe.</p>
                     <textarea

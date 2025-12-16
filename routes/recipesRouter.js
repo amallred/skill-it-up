@@ -3,7 +3,6 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 import fs from 'fs/promises'
 
-// import { recipes } from '../data/recipes.js'
 const recipeRouter = express.Router()
 
 const __filename = fileURLToPath(import.meta.url)
@@ -113,7 +112,7 @@ recipeRouter.post('/', async (req, res) => {
         })
     }
     // testing form
-    // console.log(req.body) 
+        // console.log(req.body) 
     res.status(201).json({
         data: newRecipe
     })

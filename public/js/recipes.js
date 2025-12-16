@@ -16,17 +16,17 @@ function createRecipeCard(recipeName) {
     const recipeLink = document.createElement('a')
 
     // Add classes
-    recipeTile.classList.add("tile", "button")
-    recipe.classList.add("header")
+        recipeTile.classList.add("tile", "button")
+        recipe.classList.add("header")
 
     // Populate content
-    recipeLink.href = `../recipe.html?id=${recipeName.id}`
-    recipeLink.textContent = recipeName.name 
+        recipeLink.href = `../recipe.html?id=${recipeName.id}`
+        recipeLink.textContent = recipeName.name 
     
     // Construct tile
-    recipe.appendChild(recipeLink) // link added to heading
-    recipeTile.appendChild(recipe) // heading added to tile
-    recipeContainer.appendChild(recipeTile) // tile added to container
+        recipe.appendChild(recipeLink) // link added to heading
+        recipeTile.appendChild(recipe) // heading added to tile
+        recipeContainer.appendChild(recipeTile) // tile added to container
 }
 
 async function renderCards() {

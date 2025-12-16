@@ -18,7 +18,7 @@ input, button, textarea, select {
 }
 
 a {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: inherit;
 }
 
@@ -61,14 +61,6 @@ html {
 
     /* STANDARD MARGIN */
     --MARGIN: 1rem;
-    /* CHANGE TO CLAMP LATER! */
-
-    /*  ==================
-        ==================
-        confirm the above styling before submitting
-        REMOVE THIS COMMENT
-        ==================
-        ================== */
 }
 
 @font-face {
@@ -90,317 +82,316 @@ html {
 
 
 /* || TEXT || */
-.header {
-    font-family: var(--header-font);
-    padding: var(--PADDING-HEADER)
-}
+    .header {
+        font-family: var(--header-font);
+        padding: var(--PADDING-HEADER)
+    }
 
-.text {
-    padding: var(--PADDING-TEXT);
-}
+    .text {
+        padding: var(--PADDING-TEXT);
+    }
 
-.light-text {
-    color: var(--light);
-}
+    .light-text {
+        color: var(--light);
+    }
 
 /* || SECTIONS || */
 
-body {
-    background-color: var(--background);
-    font-family: var(--font);
-    color: var(--black);
-    min-height: 100dvh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: 
-        "header"
-        "content"
-        "footer";
-}
+    body {
+        background-color: var(--background);
+        font-family: var(--font);
+        color: var(--black);
+        min-height: 100dvh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+            "header"
+            "content"
+            "footer";
+    }
 
-.top-header{
-    background-color: var(--green);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    grid-area: header;
-    padding: 0 3rem;
-}
+    .top-header{
+        background-color: var(--green);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        grid-area: header;
+        padding: 0 3rem;
+    }
 
-.title {
-    display: none;
-}
+    .title {
+        display: none;
+    }
 
-.logo-title {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    gap: 1rem;
-}
+    .logo-title {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 1rem;
+    }
 
-.logo { 
-    height: 4rem;
-    width: auto;
-}
+    .logo { 
+        height: 4rem;
+        width: auto;
+    }
 
 /* || RECIPE ERROR || */
-#error {
-    display: none;
-    align-content: center;
-}
+    #error {
+        display: none;
+        align-content: center;
+    }
 
-#error a {
-    text-decoration: underline;
-    color: var(--green)
-}
+    #error a {
+        text-decoration: underline;
+        color: var(--green)
+    }
 
 /* || MOBILE HAMBURGER MENU || */
 
-.navigation {
-    display: none;
-    padding: 1rem 1rem 1rem 0;
-}
+    .navigation {
+        display: none;
+        padding: 1rem 1rem 1rem 0;
+    }
 
-.hamburger {
-    height: auto;
-    width: auto;
-    display: inline-block;
-    position: absolute;
-    right: 2rem;
-    top: auto;
-}
+    .hamburger {
+        height: auto;
+        width: auto;
+        display: inline-block;
+        position: absolute;
+        right: 2rem;
+        top: auto;
+    }
 
-.hamburger img {
-    width: 2rem;
-    height: auto;
-    display: block;
-    margin: 1rem;
-}
+    .hamburger img {
+        width: 2rem;
+        height: auto;
+        display: block;
+        margin: 1rem;
+    }
 
-.top-header a {
-    padding: var(--PADDING-TEXT);
-} 
+    .top-header a {
+        padding: var(--PADDING-TEXT);
+    } 
 
-#nav-list {
-    align-self: end;
-}
-#nav-list li {
-    display: inline-block;
-    padding: var(--PADDING-TEXT);
-    padding: 0 1rem;
-} 
+    #nav-list {
+        align-self: end;
+    }
+    #nav-list li {
+        display: inline-block;
+        padding: var(--PADDING-TEXT);
+        padding: 0 1rem;
+    } 
 
 
 /* || UNIVERSAL CONTENT TEMPLATES || */
 
-/* all pages, holds main & aside */
-.content { 
-    display: grid;
-    justify-items: center;
-    grid-area: content;
-    gap: 1rem;
-    margin: var(--MARGIN);
-}
+    /* all pages, holds main & aside */
+    .content { 
+        display: grid;
+        justify-items: center;
+        grid-area: content;
+        gap: 1rem;
+        margin: var(--MARGIN);
+    }
 
-/* basic layout for all colored-background containers */
-.container {  
-    display: grid;
-    justify-content: center;
-    padding: var(--PADDING-TEXT);
-    box-shadow: var(--BOX-SHADOW);
-    margin: var(--MARGIN);
-    width: 75dvw;
-}
+    /* basic layout for all colored-background containers */
+    .container {  
+        display: grid;
+        justify-content: center;
+        padding: var(--PADDING-TEXT);
+        box-shadow: var(--BOX-SHADOW);
+        margin: var(--MARGIN);
+        width: 75dvw;
+    }
 
-/* basic layout for all light bg containers */
-.tile { 
-    margin: var(--MARGIN);
-    border-radius: var(--BORDER-RADIUS);
-    padding: var(--PADDING-TEXT);
-    background-color: var(--light);
-    text-align: center;
-    border: 1px solid var(--black);
-}
+    /* basic layout for all light bg containers */
+    .tile { 
+        margin: var(--MARGIN);
+        border-radius: var(--BORDER-RADIUS);
+        padding: var(--PADDING-TEXT);
+        background-color: var(--light);
+        text-align: center;
+        border: 1px solid var(--black);
+    }
 
-/* basic bg color for all pages' main content */
-.main { 
-    background-color: var(--orange);
-    margin: var(--MARGIN);
-    border-radius: var(--BORDER-RADIUS);
-}
+    /* basic bg color for all pages' main content */
+    .main { 
+        background-color: var(--orange);
+        margin: var(--MARGIN);
+        border-radius: var(--BORDER-RADIUS);
+    }
 
-/* basic bg color for tips container all pages */
-.tips { 
-    background-color: var(--red);
-    margin: var(--MARGIN);
-    border-radius: var(--BORDER-RADIUS);
-    text-align: center;
-}
+    /* basic bg color for tips container all pages */
+    .tips { 
+        background-color: var(--red);
+        margin: var(--MARGIN);
+        border-radius: var(--BORDER-RADIUS);
+        text-align: center;
+    }
 
-/* basic layout for footer */
-.footer { 
-    background-color: var(--green);
-    text-align: center;
-    padding: var(--PADDING-BOX);
-    width: 100dvw;
-    grid-area: footer;
-}
+    /* basic layout for footer */
+    .footer { 
+        background-color: var(--green);
+        text-align: center;
+        padding: var(--PADDING-BOX);
+        width: 100dvw;
+        grid-area: footer;
+    }
 
 /* || BUTTONS || */
 
-.button{
-    box-shadow: -3px 3px var(--black);
-    cursor: pointer;
-    padding: var(--PADDING-TEXT);
-    border-radius: var(--BTN-BORDER-RADIUS);
-}
+    .button{
+        box-shadow: -3px 3px var(--black);
+        cursor: pointer;
+        padding: var(--PADDING-TEXT);
+        border-radius: var(--BTN-BORDER-RADIUS);
+    }
 
-.button:hover {
-    color: var(--orange);
-}
+    .button:hover {
+        color: var(--orange);
+    }
 
-.button:active {
-    box-shadow: -1px 1px var(--black);
-    transform: translateY(2px);
-}
+    .button:active {
+        box-shadow: -1px 1px var(--black);
+        transform: translateY(2px);
+    }
 
- /* buttons on home page and share */
-.index-btn {
-    background-color: var(--green);
-    color: var(--light);
-}
+    /* buttons on home page and share */
+    .index-btn {
+        background-color: var(--green);
+        color: var(--light);
+    }
 
-/* light colored buttons */
-.light-btn {
-    background-color: var(--light);
-    color: var(--black);
-}
+    /* light colored buttons */
+    .light-btn {
+        background-color: var(--light);
+        color: var(--black);
+    }
 
-.close {
-    margin-top: 1rem;
-}
-
+    .close {
+        margin-top: 1rem;
+    }
 
 /* || RECIPES || */
 
-.recipe-card {
-    text-align: center;
-    width: 66dvw;
-    box-sizing: content-box;
-}
+    .recipe-card {
+        text-align: center;
+        width: 66dvw;
+        box-sizing: content-box;
+    }
 
-.ingredient-list, .directions {
-    text-align: left;
-    padding-left: 2rem;
-}
+    .ingredient-list, .directions {
+        text-align: left;
+        padding-left: 2rem;
+    }
 
-#ingredients {
-    padding: .25rem;
-}
+    #ingredients {
+        padding: .25rem;
+    }
 
 /* || CHECKLIST RECIPE STEPS || */
 
-#directions li, #ingredients li {
-    list-style: none;
-    cursor: pointer;
-    position: relative;
-    margin: 1rem .5rem;
-}
+    #directions li, #ingredients li {
+        list-style: none;
+        cursor: pointer;
+        position: relative;
+        margin: 1rem .5rem;
+    }
 
-#directions li::before, #ingredients li::before {
-    content: '';
-    position: absolute;
-    height: 1.5rem;
-    width: 1.5rem;
-    border-radius: 50%;
-    border: solid 2px var(--black);
-    background-size: cover;
-    background-position: center;
-    left: -2rem;
-}
+    #directions li::before, #ingredients li::before {
+        content: '';
+        position: absolute;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%;
+        border: solid 2px var(--black);
+        background-size: cover;
+        background-position: center;
+        left: -2rem;
+    }
 
-#directions li.checked, #ingredients li.checked {
-    color: var(--green);
-    text-decoration: line-through;
-}
+    #directions li.checked, #ingredients li.checked {
+        color: var(--green);
+        text-decoration: line-through;
+    }
 
-#directions li.checked::before, #ingredients li.checked::before {
-    background-color: var(--green);
-}
+    #directions li.checked::before, #ingredients li.checked::before {
+        background-color: var(--green);
+    }
 
 /* NOTES LIST BULLET POINTS */
-.notes {
-    list-style-type:circle;
-}
-.notes li {
-    margin: 1rem .5rem;
-}
+    .notes {
+        list-style-type:circle;
+    }
+    .notes li {
+        margin: 1rem .5rem;
+    }
 
 /* || SHARE A RECIPE FORM || */
 
-label {
-    display: block;
-    text-align: left;
-}
+    label {
+        display: block;
+        text-align: left;
+    }
 
-input[type=text], textarea {
-    width: 100%;
-    padding: .5rem;
-    margin: .5rem 0;
-    display: inline-block;
-    border: 1px solid var(--black);
-    border-radius: var(--BORDER-RADIUS);
-    box-sizing: border-box;
-    background-color: var(--light);
-    resize: vertical;
-}
+    input[type=text], textarea {
+        width: 100%;
+        padding: .5rem;
+        margin: .5rem 0;
+        display: inline-block;
+        border: 1px solid var(--black);
+        border-radius: var(--BORDER-RADIUS);
+        box-sizing: border-box;
+        background-color: var(--light);
+        resize: vertical;
+    }
 
-form >p {
-    text-align: left;
-    padding: 0 .75rem;
-}
+    form >p {
+        text-align: left;
+        padding: 0 .75rem;
+    }
 
-.share-instructions {
-    padding: 1rem 0;
-}
+    .share-instructions {
+        padding: 1rem 0;
+    }
 
 /* || FORM CONFIRMATION \\ */
-.confirmation {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--green);
-    color: var(--light);
-    padding: var(--PADDING-BOX);
-    border-radius: var(--BORDER-RADIUS);
-    box-shadow: var(--BOX-SHADOW);
-}
-.confirmation a {
-    font-weight:bold;
-    text-decoration: underline;
-}
+    .confirmation {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--green);
+        color: var(--light);
+        padding: var(--PADDING-BOX);
+        border-radius: var(--BORDER-RADIUS);
+        box-shadow: var(--BOX-SHADOW);
+    }
+    .confirmation a {
+        font-weight:bold;
+        text-decoration: underline;
+    }
 
 /* || TABLE FORMATTING || */
 
-.table, th, td {
-    border: 1px solid var(--black);
-    border-collapse: collapse;
-    padding: .25rem;
-}
+    .table, th, td {
+        border: 1px solid var(--black);
+        border-collapse: collapse;
+        padding: .25rem;
+    }
 
-.table {
-    table-layout: fixed;
-    width: 100%;
-    font-size: .75rem;
-}
+    .table {
+        table-layout: fixed;
+        width: 100%;
+        font-size: .75rem;
+    }
 
-.measurements-container {
-    margin: 0;
-}
+    .measurements-container {
+        margin: 0;
+    }
 
 /* || LARGER SCREENS (tablets and larger) || */
 
